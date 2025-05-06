@@ -1,0 +1,1007 @@
+{
+    "rau muống xào tỏi": {
+        "nguyen_lieu": [
+            "1 bó rau muống",
+            "5 tép tỏi",
+            "dầu ăn",
+            "muối",
+            "nước mắm"
+        ],
+        "cach_lam": "1. Rau muống nhặt sạch, ngâm nước muối, để ráo.\n2. Tỏi băm nhỏ, phi thơm với dầu.\n3. Cho rau vào xào lửa lớn, nêm muối và nước mắm vừa ăn.\n4. Khi rau chín tới thì tắt bếp, dùng nóng."
+    },
+    "bò xào hành tây": {
+        "nguyen_lieu": [
+            "300g thịt bò",
+            "1 củ hành tây",
+            "tỏi",
+            "dầu ăn",
+            "nước tương",
+            "tiêu",
+            "muối"
+        ],
+        "cach_lam": "1. Bò thái mỏng, ướp với tỏi, nước tương, tiêu.\n2. Hành tây cắt múi cau.\n3. Phi tỏi, xào bò chín tái rồi cho hành tây vào đảo đều.\n4. Nêm lại gia vị, tắt bếp."
+    },
+    "mực xào cần tây": {
+        "nguyen_lieu": [
+            "300g mực",
+            "1 bó cần tây",
+            "1 củ hành tây",
+            "tỏi",
+            "nước mắm",
+            "tiêu"
+        ],
+        "cach_lam": "1. Mực làm sạch, cắt khoanh. Cần tây cắt khúc.\n2. Phi tỏi, xào mực nhanh tay, cho hành tây và cần tây vào đảo đều.\n3. Nêm nước mắm, tiêu vừa ăn. Xào nhanh rồi tắt bếp."
+    },
+    "gà xào sả ớt": {
+        "nguyen_lieu": [
+            "300g thịt gà",
+            "2 cây sả",
+            "ớt",
+            "tỏi",
+            "nước mắm",
+            "đường",
+            "dầu ăn"
+        ],
+        "cach_lam": "1. Gà cắt miếng nhỏ, ướp với nước mắm, đường, tỏi.\n2. Phi tỏi, sả băm và ớt cho thơm rồi cho gà vào xào.\n3. Đảo đều đến khi thịt gà chín và săn lại. Nêm lại rồi tắt bếp."
+    },
+    "tôm xào rau củ": {
+        "nguyen_lieu": [
+            "200g tôm",
+            "cà rốt",
+            "đậu que",
+            "bông cải",
+            "hành tím",
+            "muối",
+            "tiêu"
+        ],
+        "cach_lam": "1. Tôm bóc vỏ, sơ chế rau củ cắt vừa ăn.\n2. Phi hành, xào tôm rồi cho rau vào đảo đều.\n3. Nêm gia vị vừa ăn, xào chín tới rồi tắt bếp."
+    },
+    "trứng xào cà chua": {
+        "nguyen_lieu": [
+            "2 quả trứng",
+            "2 quả cà chua",
+            "hành lá",
+            "muối",
+            "dầu ăn"
+        ],
+        "cach_lam": "1. Cà chua cắt múi, trứng đánh tan.\n2. Xào cà chua mềm, nêm chút muối.\n3. Đổ trứng vào đảo đều đến khi chín, rắc hành rồi tắt bếp."
+    },
+    "đậu que xào thịt bò": {
+        "nguyen_lieu": [
+            "200g thịt bò",
+            "200g đậu que",
+            "tỏi",
+            "nước tương",
+            "tiêu"
+        ],
+        "cach_lam": "1. Bò thái mỏng ướp gia vị. Đậu que cắt khúc, luộc sơ.\n2. Xào bò nhanh tay, rồi cho đậu vào đảo chung.\n3. Nêm vừa ăn rồi tắt bếp."
+    },
+    "bắp cải xào trứng": {
+        "nguyen_lieu": [
+            "1/2 cái bắp cải",
+            "2 quả trứng",
+            "tỏi",
+            "muối",
+            "dầu ăn"
+        ],
+        "cach_lam": "1. Bắp cải cắt sợi. Trứng đánh tan.\n2. Phi tỏi, cho bắp cải vào xào sơ rồi đổ trứng vào đảo đều.\n3. Nêm vừa ăn và tắt bếp."
+    },
+    "mướp xào trứng": {
+        "nguyen_lieu": [
+            "2 quả mướp",
+            "2 quả trứng",
+            "tỏi",
+            "muối",
+            "dầu ăn"
+        ],
+        "cach_lam": "1. Mướp gọt vỏ, cắt lát. Trứng đánh tan.\n2. Phi tỏi, xào mướp sơ rồi đổ trứng vào đảo đều.\n3. Nêm muối vừa ăn và tắt bếp."
+    },
+    "cải ngọt xào tỏi": {
+        "nguyen_lieu": [
+            "1 bó cải ngọt",
+            "5 tép tỏi",
+            "muối",
+            "dầu ăn"
+        ],
+        "cach_lam": "1. Cải ngọt rửa sạch, cắt khúc. Tỏi băm nhỏ.\n2. Phi tỏi, xào cải ngọt với lửa lớn.\n3. Nêm muối vừa ăn, xào nhanh tay rồi tắt bếp."
+    },
+    "hải sản xào chua ngọt": {
+        "nguyen_lieu": [
+            "300g hải sản (tôm, mực)",
+            "ớt chuông",
+            "dứa",
+            "cà chua",
+            "gia vị chua ngọt",
+            "tỏi"
+        ],
+        "cach_lam": "1. Sơ chế hải sản và rau củ.\n2. Phi tỏi, xào hải sản chín tới, cho rau củ vào đảo đều.\n3. Thêm nước sốt chua ngọt, nêm lại vừa ăn rồi tắt bếp."
+    },
+    "nấm xào thịt heo": {
+        "nguyen_lieu": [
+            "200g thịt heo",
+            "150g nấm (rơm hoặc nấm bào ngư)",
+            "tỏi",
+            "nước mắm",
+            "tiêu"
+        ],
+        "cach_lam": "1. Thịt heo thái mỏng, ướp gia vị. Nấm rửa sạch.\n2. Xào thịt săn lại, cho nấm vào đảo đều.\n3. Nêm nước mắm, tiêu rồi tắt bếp."
+    },
+    "rau nhút xào tỏi": {
+        "nguyen_lieu": [
+            "1 bó rau nhút",
+            "5 tép tỏi",
+            "muối",
+            "dầu ăn"
+        ],
+        "cach_lam": "1. Rau nhút nhặt rửa sạch. Tỏi băm nhỏ.\n2. Phi tỏi, xào rau với lửa lớn.\n3. Nêm muối vừa ăn, xào đến khi chín tới thì tắt bếp."
+    },
+    "cải thìa xào nấm đông cô": {
+        "nguyen_lieu": [
+            "1 bó cải thìa",
+            "100g nấm đông cô",
+            "tỏi",
+            "nước tương",
+            "dầu hào"
+        ],
+        "cach_lam": "1. Cải thìa rửa sạch, nấm ngâm mềm cắt miếng.\n2. Phi tỏi, xào cải rồi cho nấm vào.\n3. Nêm dầu hào, nước tương rồi xào chín."
+    },
+    "tim heo xào hành cần": {
+        "nguyen_lieu": [
+            "1 quả tim heo",
+            "cần tây",
+            "hành tây",
+            "gừng",
+            "tỏi",
+            "nước mắm"
+        ],
+        "cach_lam": "1. Tim heo rửa sạch, luộc sơ rồi thái lát. Cần và hành cắt khúc.\n2. Phi gừng, tỏi, xào tim với lửa lớn rồi cho rau vào đảo đều.\n3. Nêm vừa ăn và tắt bếp."
+    },
+    "trứng chiên xào khổ qua": {
+        "nguyen_lieu": [
+            "1 quả khổ qua",
+            "2 quả trứng",
+            "hành tím",
+            "muối",
+            "dầu ăn"
+        ],
+        "cach_lam": "1. Khổ qua cắt lát mỏng, trứng đánh tan.\n2. Xào khổ qua sơ rồi đổ trứng vào đảo đều.\n3. Nêm muối vừa ăn, chín tới thì tắt bếp."
+    },
+    "lòng gà xào mướp": {
+        "nguyen_lieu": [
+            "200g lòng gà",
+            "1 quả mướp",
+            "hành tím",
+            "muối",
+            "tiêu"
+        ],
+        "cach_lam": "1. Lòng gà làm sạch, mướp gọt vỏ cắt miếng.\n2. Phi hành, xào lòng gà cho săn.\n3. Cho mướp vào xào cùng, nêm vừa ăn rồi tắt bếp."
+    },
+    "bông bí xào tỏi": {
+        "nguyen_lieu": [
+            "200g bông bí",
+            "5 tép tỏi",
+            "muối",
+            "dầu ăn"
+        ],
+        "cach_lam": "1. Bông bí nhặt sạch, để ráo.\n2. Phi tỏi thơm, xào bông bí lửa lớn.\n3. Nêm muối, đảo đều rồi tắt bếp."
+    },
+    "cà tím xào thịt bằm": {
+        "nguyen_lieu": [
+            "2 quả cà tím",
+            "150g thịt bằm",
+            "tỏi",
+            "nước mắm",
+            "tiêu"
+        ],
+        "cach_lam": "1. Cà tím cắt khúc, ngâm nước muối.\n2. Xào thịt bằm với tỏi, cho cà vào đảo đều.\n3. Nêm gia vị vừa ăn, nấu chín tới thì tắt bếp."
+    },
+    "bắp non xào thịt bò": {
+        "nguyen_lieu": [
+            "200g bắp non",
+            "200g thịt bò",
+            "tỏi",
+            "nước tương",
+            "tiêu"
+        ],
+        "cach_lam": "1. Bò thái mỏng, ướp gia vị. Bắp non cắt đôi.\n2. Xào bò cho săn, cho bắp vào đảo đều.\n3. Nêm nước tương, tiêu rồi tắt bếp."
+    },
+    "thịt ba chỉ luộc": {
+        "nguyen_lieu": [
+            "500g thịt ba chỉ",
+            "1 củ gừng",
+            "1 củ hành tím",
+            "muối"
+        ],
+        "cach_lam": "1. Thịt rửa sạch, chần qua nước sôi.\n2. Đun sôi nước với gừng và hành, cho thịt vào luộc khoảng 30 phút.\n3. Vớt ra, để nguội rồi thái mỏng. Dùng với nước mắm tỏi ớt."
+    },
+    "gà luộc": {
+        "nguyen_lieu": [
+            "1 con gà ta",
+            "1 củ gừng",
+            "2 cây hành lá",
+            "muối"
+        ],
+        "cach_lam": "1. Gà làm sạch, cho vào nồi nước lạnh cùng gừng đập dập và hành.\n2. Đun sôi, hạ lửa nhỏ, luộc khoảng 30-40 phút.\n3. Vớt gà ra, để nguội rồi chặt miếng vừa ăn. Dùng với muối tiêu chanh."
+    },
+    "trứng gà luộc": {
+        "nguyen_lieu": [
+            "4 quả trứng gà",
+            "nước"
+        ],
+        "cach_lam": "1. Cho trứng vào nồi nước lạnh, đun sôi.\n2. Luộc 8-10 phút tùy theo độ chín mong muốn.\n3. Vớt ra, ngâm nước lạnh rồi bóc vỏ."
+    },
+    "rau muống luộc": {
+        "nguyen_lieu": [
+            "1 bó rau muống",
+            "muối"
+        ],
+        "cach_lam": "1. Rau muống nhặt, rửa sạch.\n2. Đun sôi nước với chút muối, cho rau vào luộc 3-5 phút.\n3. Vớt ra, để ráo. Dùng với nước mắm chua ngọt."
+    },
+    "bắp cải luộc": {
+        "nguyen_lieu": [
+            "1 cái bắp cải",
+            "muối"
+        ],
+        "cach_lam": "1. Bắp cải cắt múi cau, rửa sạch.\n2. Đun sôi nước với chút muối, cho bắp cải vào luộc 5-7 phút.\n3. Vớt ra, để ráo. Dùng với nước mắm tỏi ớt."
+    },
+    "khoai lang luộc": {
+        "nguyen_lieu": [
+            "500g khoai lang",
+            "nước"
+        ],
+        "cach_lam": "1. Khoai lang rửa sạch, để nguyên vỏ.\n2. Cho vào nồi, đổ nước ngập khoai, đun sôi rồi hạ lửa nhỏ, luộc 20-25 phút.\n3. Vớt ra, để nguội rồi bóc vỏ."
+    },
+    "lòng heo luộc": {
+        "nguyen_lieu": [
+            "500g lòng heo",
+            "gừng",
+            "muối",
+            "giấm"
+        ],
+        "cach_lam": "1. Lòng heo rửa sạch với muối và giấm.\n2. Đun sôi nước với gừng, cho lòng vào luộc 15-20 phút.\n3. Vớt ra, ngâm nước lạnh rồi thái miếng. Dùng với mắm tôm hoặc nước mắm gừng."
+    },
+    "ốc luộc": {
+        "nguyen_lieu": [
+            "1kg ốc",
+            "sả",
+            "lá chanh",
+            "muối"
+        ],
+        "cach_lam": "1. Ốc ngâm nước gạo vài giờ, rửa sạch.\n2. Đun sôi nước với sả đập dập và lá chanh, cho ốc vào luộc 10-15 phút.\n3. Vớt ra, dùng nóng với nước mắm gừng."
+    },
+    "đậu bắp luộc": {
+        "nguyen_lieu": [
+            "200g đậu bắp",
+            "muối"
+        ],
+        "cach_lam": "1. Đậu bắp rửa sạch, cắt bỏ cuống.\n2. Đun sôi nước với chút muối, cho đậu bắp vào luộc 3-5 phút.\n3. Vớt ra, để ráo. Dùng với chao hoặc nước mắm."
+    },
+    "su su luộc": {
+        "nguyen_lieu": [
+            "2 quả su su",
+            "muối"
+        ],
+        "cach_lam": "1. Su su gọt vỏ, cắt miếng vừa ăn.\n2. Đun sôi nước với chút muối, cho su su vào luộc 5-7 phút.\n3. Vớt ra, để ráo. Dùng với nước mắm chanh tỏi."
+    },
+    "thịt chân giò luộc": {
+        "nguyen_lieu": [
+            "500g thịt chân giò",
+            "gừng",
+            "muối"
+        ],
+        "cach_lam": "1. Thịt rửa sạch, chần qua nước sôi.\n2. Đun sôi nước với gừng đập dập, cho thịt vào luộc 40-50 phút.\n3. Vớt ra, để nguội rồi thái miếng. Dùng với nước mắm gừng."
+    },
+    "tràng lợn luộc": {
+        "nguyen_lieu": [
+            "300g tràng lợn",
+            "gừng",
+            "muối",
+            "giấm"
+        ],
+        "cach_lam": "1. Tràng lợn rửa sạch với muối và giấm.\n2. Đun sôi nước với gừng, cho tràng vào luộc 15-20 phút.\n3. Vớt ra, ngâm nước lạnh rồi thái miếng. Dùng với nước mắm chanh tỏi."
+    },
+    "tai heo luộc": {
+        "nguyen_lieu": [
+            "2 cái tai heo",
+            "gừng",
+            "muối",
+            "giấm"
+        ],
+        "cach_lam": "1. Tai heo rửa sạch với muối và giấm.\n2. Đun sôi nước với gừng, cho tai vào luộc 30-40 phút.\n3. Vớt ra, để nguội rồi thái mỏng. Dùng với nước mắm gừng."
+    },
+    "cải ngọt luộc": {
+        "nguyen_lieu": [
+            "1 bó cải ngọt",
+            "muối"
+        ],
+        "cach_lam": "1. Cải ngọt nhặt, rửa sạch.\n2. Đun sôi nước với chút muối, cho cải vào luộc 3-5 phút.\n3. Vớt ra, để ráo. Dùng với nước mắm tỏi ớt."
+    },
+    "bắp bò luộc": {
+        "nguyen_lieu": [
+            "500g bắp bò",
+            "gừng",
+            "sả",
+            "muối"
+        ],
+        "cach_lam": "1. Bắp bò rửa sạch, chần qua nước sôi.\n2. Đun sôi nước với gừng và sả, cho thịt vào luộc 40-50 phút.\n3. Vớt ra, để nguội rồi thái mỏng. Dùng với nước mắm gừng."
+    },
+    "súp lơ luộc": {
+        "nguyen_lieu": [
+            "1 cây súp lơ",
+            "muối"
+        ],
+        "cach_lam": "1. Súp lơ cắt nhỏ, rửa sạch.\n2. Đun sôi nước với chút muối, cho súp lơ vào luộc 5-7 phút.\n3. Vớt ra, để ráo. Dùng với nước mắm tỏi ớt."
+    },
+    "măng tươi luộc": {
+        "nguyen_lieu": [
+            "500g măng tươi",
+            "muối"
+        ],
+        "cach_lam": "1. Măng tươi gọt vỏ, cắt miếng vừa ăn.\n2. Đun sôi nước với chút muối, cho măng vào luộc 20-30 phút.\n3. Vớt ra, để ráo. Dùng với nước mắm chanh tỏi."
+    },
+    "rau dền luộc": {
+        "nguyen_lieu": [
+            "1 bó rau dền",
+            "muối"
+        ],
+        "cach_lam": "1. Rau dền nhặt, rửa sạch.\n2. Đun sôi nước với chút muối, cho rau vào luộc 3-5 phút.\n3. Vớt ra, để ráo. Dùng với nước mắm tỏi ớt."
+    },
+    "cà rốt luộc": {
+        "nguyen_lieu": [
+            "2 củ cà rốt",
+            "muối"
+        ],
+        "cach_lam": "1. Cà rốt gọt vỏ, cắt miếng vừa ăn.\n2. Đun sôi nước với chút muối, cho cà rốt vào luộc 5-7 phút.\n3. Vớt ra, để ráo. Dùng với nước mắm chanh tỏi."
+    },
+    "cải thìa luộc": {
+        "nguyen_lieu": [
+            "1 bó cải thìa",
+            "muối"
+        ],
+        "cach_lam": "1. Cải thìa nhặt, rửa sạch.\n2. Đun sôi nước với chút muối, cho cải vào luộc 3-5 phút.\n3. Vớt ra, để ráo. Dùng với nước mắm tỏi ớt."
+    },
+    "cá lóc hấp bầu": {
+        "nguyen_lieu": [
+            "1 con cá lóc",
+            "1 trái bầu",
+            "hành lá",
+            "gừng",
+            "tiêu",
+            "muối",
+            "nước mắm"
+        ],
+        "cach_lam": "1. Cá lóc làm sạch, ướp với tiêu, muối, nước mắm và gừng đập dập.\n2. Bầu gọt vỏ, nạo mỏng thành lớp lót dưới đĩa hấp.\n3. Đặt cá lên bầu, rắc hành lá cắt khúc.\n4. Hấp khoảng 25 phút cho cá chín.\n5. Dùng nóng với nước mắm chanh tỏi."
+    },
+    "gà hấp muối": {
+        "nguyen_lieu": [
+            "1 con gà ta",
+            "1kg muối hột",
+            "sả",
+            "lá chanh",
+            "gừng"
+        ],
+        "cach_lam": "1. Gà làm sạch, nhồi sả và lá chanh vào bụng.\n2. Đổ muối hột vào nồi, lót sả lên trên.\n3. Đặt gà lên, phủ kín nắp và hấp trong 45 phút.\n4. Gà chín thơm, không cần thêm nước.\n5. Dùng với muối tiêu chanh."
+    },
+    "tôm hấp nước dừa": {
+        "nguyen_lieu": [
+            "500g tôm",
+            "1 trái dừa xiêm",
+            "sả",
+            "muối"
+        ],
+        "cach_lam": "1. Tôm rửa sạch, cắt râu.\n2. Dừa lấy nước để hấp.\n3. Cho tôm vào xửng, thêm sả đập dập.\n4. Đổ nước dừa vào nồi dưới, hấp 10-15 phút.\n5. Tôm chín đỏ đều, ngọt nước dừa."
+    },
+    "sò điệp hấp hành gừng": {
+        "nguyen_lieu": [
+            "12 con sò điệp",
+            "gừng",
+            "hành lá",
+            "tiêu",
+            "nước mắm"
+        ],
+        "cach_lam": "1. Sò điệp rửa sạch, đặt vào đĩa.\n2. Gừng thái sợi, hành lá cắt nhỏ.\n3. Rưới nước mắm, rắc gừng và hành lên sò.\n4. Hấp 7-10 phút.\n5. Dùng nóng với rau thơm."
+    },
+    "bò cuộn nấm kim châm hấp": {
+        "nguyen_lieu": [
+            "300g thịt bò lát mỏng",
+            "300g thịt bò lát mỏng",
+            "nước tương",
+            "tiêu"
+        ],
+        "cach_lam": "1. Trải thịt bò, cuộn cùng nấm kim châm.\n2. Cố định cuộn, rắc tiêu và rưới nước tương nhẹ.\n3. Hấp 10 phút đến khi thịt chín mềm.\n4. Dùng nóng với nước tương gừng."
+    },
+    "mực hấp gừng": {
+        "nguyen_lieu": [
+            "500g mực ống",
+            "gừng",
+            "hành lá",
+            "muối",
+            "tiêu"
+        ],
+        "cach_lam": "1. Mực làm sạch, để nguyên con hoặc cắt khoanh.\n2. Gừng thái lát, hành cắt khúc.\n3. Xếp mực vào đĩa, rắc gừng, hành, muối tiêu.\n4. Hấp 15 phút là chín.\n5. Dùng với nước mắm gừng."
+    },
+    "trứng hấp thịt": {
+        "nguyen_lieu": [
+            "3 quả trứng gà",
+            "100g thịt băm",
+            "hành tím",
+            "nước mắm",
+            "tiêu"
+        ],
+        "cach_lam": "1. Trộn trứng với thịt băm, hành băm, nêm nước mắm.\n2. Đổ vào tô chịu nhiệt.\n3. Hấp cách thủy 15-20 phút.\n4. Khi trứng đông lại, rắc tiêu lên.\n5. Dùng với cơm nóng."
+    },
+    "đậu hũ hấp trứng muối": {
+        "nguyen_lieu": [
+            "2 miếng đậu hũ non",
+            "2 lòng đỏ trứng muối",
+            "hành lá",
+            "dầu mè",
+            "nước tương"
+        ],
+        "cach_lam": "1. Cắt đậu hũ thành miếng vuông.\n2. Đặt trứng muối lên mặt đậu.\n3. Hấp 10 phút, rưới dầu mè và nước tương.\n4. Trang trí hành lá cắt nhỏ.\n5. Dùng nóng."
+    },
+    "gà hấp hành": {
+        "nguyen_lieu": [
+            "1/2 con gà",
+            "hành lá",
+            "gừng",
+            "tiêu",
+            "muối"
+        ],
+        "cach_lam": "1. Gà chặt miếng vừa ăn, ướp gừng, muối, tiêu.\n2. Trộn hành lá cắt nhỏ vào gà.\n3. Cho vào xửng hấp khoảng 30 phút.\n4. Dùng nóng với cơm trắng."
+    },
+    "chả cá hấp": {
+        "nguyen_lieu": [
+            "300g chả cá sống",
+            "thì là",
+            "hành lá",
+            "tiêu"
+        ],
+        "cach_lam": "1. Trộn chả cá với thì là, hành lá, tiêu.\n2. Cho vào chén hoặc khuôn.\n3. Hấp cách thủy 20 phút.\n4. Khi chả chín, lấy ra dùng nóng."
+    },
+    "cá thu hấp hành gừng": {
+        "nguyen_lieu": [
+            "2 khúc cá thu",
+            "gừng",
+            "hành lá",
+            "nước mắm",
+            "tiêu"
+        ],
+        "cach_lam": "1. Cá thu rửa sạch, ướp với nước mắm, gừng thái sợi, tiêu.\n2. Đặt cá lên đĩa, rắc hành lá lên.\n3. Hấp 15-20 phút đến khi cá chín.\n4. Dùng nóng với cơm và nước mắm chua ngọt."
+    },
+    "cua hấp bia": {
+        "nguyen_lieu": [
+            "2 con cua",
+            "1 lon bia",
+            "sả",
+            "muối"
+        ],
+        "cach_lam": "1. Rửa sạch cua, để ráo nước.\n2. Lót sả dưới nồi hấp, đổ bia vào.\n3. Đặt cua lên trên và hấp 15 phút.\n4. Cua chín đỏ đều, thịt ngọt.\n5. Dùng với muối tiêu chanh."
+    },
+    "hàu hấp mỡ hành": {
+        "nguyen_lieu": [
+            "10 con hàu",
+            "hành lá",
+            "dầu ăn",
+            "lạc rang",
+            "nước mắm"
+        ],
+        "cach_lam": "1. Rửa sạch hàu, tách đôi vỏ.\n2. Phi hành lá với dầu, rưới lên từng con hàu.\n3. Hấp 5-7 phút.\n4. Rắc lạc rang giã nhỏ lên mặt.\n5. Dùng nóng, chấm nước mắm chanh tỏi."
+    },
+    "trứng vịt lộn hấp lá ngải": {
+        "nguyen_lieu": [
+            "4 quả trứng vịt lộn",
+            "lá ngải cứu",
+            "gừng",
+            "muối"
+        ],
+        "cach_lam": "1. Xếp lá ngải cứu và vài lát gừng dưới đáy nồi hấp.\n2. Đặt trứng vịt lộn lên trên.\n3. Hấp 10-12 phút cho chín.\n4. Dùng với muối tiêu gừng."
+    },
+    "ốc bươu hấp sả": {
+        "nguyen_lieu": [
+            "1kg ốc bươu",
+            "sả",
+            "ớt",
+            "muối"
+        ],
+        "cach_lam": "1. Ngâm ốc với nước muối để sạch bùn.\n2. Đập dập sả, lót dưới nồi.\n3. Cho ốc lên, rải thêm ớt.\n4. Hấp 20 phút.\n5. Dùng với nước mắm gừng."
+    },
+    "gà hấp nấm đông cô": {
+        "nguyen_lieu": [
+            "500g thịt gà",
+            "nấm đông cô",
+            "hành lá",
+            "tiêu",
+            "muối"
+        ],
+        "cach_lam": "1. Gà chặt miếng, ướp muối tiêu.\n2. Nấm đông cô ngâm mềm, cắt đôi.\n3. Trộn gà với nấm, hấp 25 phút.\n4. Rắc hành lá trước khi dùng."
+    },
+    "cá chép hấp xì dầu": {
+        "nguyen_lieu": [
+            "1 con cá chép",
+            "xì dầu",
+            "gừng",
+            "hành lá",
+            "ớt"
+        ],
+        "cach_lam": "1. Cá chép làm sạch, khứa nhẹ thân cá.\n2. Ướp với xì dầu, gừng thái sợi.\n3. Hấp cá trong 25 phút.\n4. Rắc hành lá, ớt tỉa chỉ lên mặt.\n5. Dùng nóng với cơm trắng."
+    },
+    "rau củ hấp chấm kho quẹt": {
+        "nguyen_lieu": [
+            "súp lơ",
+            "cà rốt",
+            "đậu que",
+            "kho quẹt đã làm sẵn"
+        ],
+        "cach_lam": "1. Rau củ rửa sạch, cắt vừa ăn.\n2. Xếp vào xửng hấp trong 10 phút.\n3. Dùng kèm kho quẹt chấm.\n4. Món chay thanh mát, dễ ăn."
+    },
+    "nấm rơm hấp gừng": {
+        "nguyen_lieu": [
+            "300g nấm rơm",
+            "gừng",
+            "muối",
+            "tiêu"
+        ],
+        "cach_lam": "1. Rửa sạch nấm rơm, để ráo.\n2. Gừng thái sợi, trộn đều với nấm.\n3. Ướp muối, tiêu, hấp 15 phút.\n4. Dùng nóng, chấm muối tiêu chanh."
+    },
+    "trứng hấp hải sản": {
+        "nguyen_lieu": [
+            "2 quả trứng",
+            "100g tôm",
+            "100g mực",
+            "hành lá",
+            "nước mắm",
+            "tiêu"
+        ],
+        "cach_lam": "1. Đánh trứng với chút nước mắm, tiêu.\n2. Tôm, mực luộc sơ, cắt nhỏ.\n3. Trộn với trứng, đổ vào chén.\n4. Hấp 20 phút.\n5. Rắc hành lá và dùng nóng."
+    },
+    "thịt kho trứng": {
+        "nguyen_lieu": [
+            "500g thịt ba chỉ",
+            "4 quả trứng vịt",
+            "1 trái dừa tươi",
+            "nước mắm",
+            "đường",
+            "tiêu",
+            "hành tím"
+        ],
+        "cach_lam": "1. Thịt ba chỉ rửa sạch, cắt miếng vừa ăn, chần sơ qua nước sôi.\n2. Trứng vịt luộc chín, bóc vỏ.\n3. Ướp thịt với nước mắm, đường, tiêu, hành tím băm nhỏ trong 30 phút.\n4. Phi thơm hành, cho thịt vào xào săn.\n5. Đổ nước dừa vào ngập thịt, đun sôi, hớt bọt.\n6. Cho trứng vào, hạ lửa nhỏ, kho liu riu đến khi nước sánh lại.\n7. Nêm nếm lại cho vừa ăn, dùng nóng với cơm trắng."
+    },
+    "cá kho tộ": {
+        "nguyen_lieu": [
+            "500g cá trê hoặc cá basa",
+            "nước mắm",
+            "đường",
+            "tiêu",
+            "hành tím",
+            "ớt",
+            "nước dừa tươi"
+        ],
+        "cach_lam": "1. Cá làm sạch, cắt khúc, ướp với nước mắm, đường, tiêu, hành tím băm, ớt trong 30 phút.\n2. Phi thơm hành, cho cá vào nồi đất, đổ nước dừa ngập mặt cá.\n3. Đun sôi, hớt bọt, hạ lửa nhỏ, kho đến khi nước sánh lại.\n4. Nêm nếm lại cho vừa ăn, dùng nóng với cơm trắng."
+    },
+    "thịt kho tiêu": {
+        "nguyen_lieu": [
+            "500g thịt ba chỉ",
+            "nước mắm",
+            "đường",
+            "tiêu",
+            "hành tím",
+            "tỏi"
+        ],
+        "cach_lam": "1. Thịt ba chỉ rửa sạch, cắt miếng vừa ăn, chần sơ qua nước sôi.\n2. Ướp thịt với nước mắm, đường, tiêu, hành tím và tỏi băm nhỏ trong 30 phút.\n3. Phi thơm hành tỏi, cho thịt vào xào săn.\n4. Thêm nước, đun sôi, hạ lửa nhỏ, kho đến khi nước sánh lại.\n5. Nêm nếm lại cho vừa ăn, dùng nóng với cơm trắng."
+    },
+    "cá nục kho cà": {
+        "nguyen_lieu": [
+            "500g cá nục",
+            "2 quả cà chua",
+            "nước mắm",
+            "đường",
+            "tiêu",
+            "hành tím",
+            "tỏi"
+        ],
+        "cach_lam": "1. Cá nục làm sạch, cắt khúc, ướp với nước mắm, đường, tiêu, hành tím và tỏi băm nhỏ trong 30 phút.\n2. Cà chua rửa sạch, cắt múi cau.\n3. Phi thơm hành tỏi, cho cà chua vào xào mềm.\n4. Cho cá vào nồi, thêm nước, đun sôi, hạ lửa nhỏ, kho đến khi nước sánh lại.\n5. Nêm nếm lại cho vừa ăn, dùng nóng với cơm trắng."
+    },
+    "tôm kho tàu": {
+        "nguyen_lieu": [
+            "500g tôm sú",
+            "nước mắm",
+            "đường",
+            "tiêu",
+            "hành tím",
+            "tỏi",
+            "nước dừa tươi"
+        ],
+        "cach_lam": "1. Tôm rửa sạch, cắt râu, để ráo.\n2. Ướp tôm với nước mắm, đường, tiêu, hành tím và tỏi băm nhỏ trong 30 phút.\n3. Phi thơm hành tỏi, cho tôm vào xào săn.\n4. Đổ nước dừa vào ngập tôm, đun sôi, hạ lửa nhỏ, kho đến khi nước sánh lại.\n5. Nêm nếm lại cho vừa ăn, dùng nóng với cơm trắng."
+    },
+    "thịt kho dưa cải": {
+        "nguyen_lieu": [
+            "500g thịt ba chỉ",
+            "200g dưa cải chua",
+            "nước mắm",
+            "đường",
+            "tiêu",
+            "hành tím",
+            "tỏi"
+        ],
+        "cach_lam": "1. Thịt ba chỉ rửa sạch, cắt miếng vừa ăn, chần sơ qua nước sôi.\n2. Dưa cải chua rửa sạch, vắt ráo nước.\n3. Ướp thịt với nước mắm, đường, tiêu, hành tím và tỏi băm nhỏ trong 30 phút.\n4. Phi thơm hành tỏi, cho thịt vào xào săn.\n5. Thêm dưa cải vào xào chung, đổ nước vào ngập thịt, đun sôi, hạ lửa nhỏ, kho đến khi nước sánh lại.\n6. Nêm nếm lại cho vừa ăn, dùng nóng với cơm trắng."
+    },
+    "cá bống kho tiêu": {
+        "nguyen_lieu": [
+            "500g cá bống",
+            "nước mắm",
+            "đường",
+            "tiêu",
+            "hành tím",
+            "tỏi"
+        ],
+        "cach_lam": "1. Cá bống làm sạch, để ráo.\n2. Ướp cá với nước mắm, đường, tiêu, hành tím và tỏi băm nhỏ trong 30 phút.\n3. Phi thơm hành tỏi, cho cá vào nồi, đổ nước vào ngập cá.\n4. Đun sôi, hạ lửa nhỏ, kho đến khi nước sánh lại.\n5. Nêm nếm lại cho vừa ăn, dùng nóng với cơm trắng."
+    },
+    "thịt kho mắm ruốc": {
+        "nguyen_lieu": [
+            "500g thịt ba chỉ",
+            "2 muỗng canh mắm ruốc",
+            "đường",
+            "tiêu",
+            "hành tím",
+            "tỏi"
+        ],
+        "cach_lam": "1. Thịt ba chỉ rửa sạch, cắt miếng vừa ăn, chần sơ qua nước sôi.\n2. Hòa mắm ruốc với nước, lọc bỏ cặn.\n3. Ướp thịt với mắm ruốc, đường, tiêu, hành tím và tỏi băm nhỏ trong 30 phút.\n4. Phi thơm hành tỏi, cho thịt vào xào săn.\n5. Đổ nước vào ngập thịt, đun sôi, hạ lửa nhỏ, kho đến khi nước sánh lại.\n6. Nêm nếm lại cho vừa ăn, dùng nóng với cơm trắng."
+    },
+    "cá lóc kho nghệ": {
+        "nguyen_lieu": [
+            "500g cá lóc",
+            "1 củ nghệ tươi",
+            "nước mắm",
+            "đường",
+            "tiêu",
+            "hành tím",
+            "tỏi"
+        ],
+        "cach_lam": "1. Cá lóc làm sạch, cắt khúc, ướp với nước mắm, đường, tiêu, hành tím, tỏi băm nhỏ và nghệ giã nhuyễn trong 30 phút.\n2. Phi thơm hành tỏi, cho cá vào nồi, đổ nước vào ngập cá.\n3. Đun sôi, hạ lửa nhỏ, kho đến khi nước sánh lại.\n4. Nêm nếm lại cho vừa ăn, dùng nóng với cơm trắng."
+    },
+    "thịt kho củ cải": {
+        "nguyen_lieu": [
+            "500g thịt ba chỉ",
+            "2 củ cải trắng",
+            "nước mắm",
+            "đường",
+            "tiêu",
+            "hành tím",
+            "tỏi"
+        ],
+        "cach_lam": "1. Thịt ba chỉ rửa sạch, cắt miếng vừa ăn, chần sơ qua nước sôi.\n2. Củ cải gọt vỏ, cắt miếng vừa ăn.\n3. Ướp thịt với nước mắm, đường, tiêu, hành tím và tỏi băm nhỏ trong 30 phút.\n4. Phi thơm hành tỏi, cho thịt vào xào săn.\n5. Thêm củ cải vào xào chung, đổ nước vào ngập thịt, đun sôi, hạ lửa nhỏ, kho đến khi nước sánh lại.\n6. Nêm nếm lại cho vừa ăn, dùng nóng với cơm trắng."
+    },
+    "gà kho gừng": {
+        "nguyen_lieu": [
+            "500g thịt gà",
+            "1 củ gừng",
+            "hành tím",
+            "nước mắm",
+            "đường",
+            "tiêu"
+        ],
+        "cach_lam": "1. Gà làm sạch, chặt miếng vừa ăn. Gừng thái sợi.\n2. Ướp gà với nước mắm, đường, tiêu, hành tím và gừng trong 30 phút.\n3. Phi thơm hành và gừng, cho gà vào xào săn.\n4. Thêm nước, kho nhỏ lửa đến khi thịt mềm và nước sánh lại.\n5. Nêm lại cho vừa ăn, dùng nóng."
+    },
+    "mực kho tiêu": {
+        "nguyen_lieu": [
+            "400g mực",
+            "hành tím",
+            "tỏi",
+            "tiêu",
+            "nước mắm",
+            "đường"
+        ],
+        "cach_lam": "1. Mực làm sạch, cắt miếng vừa ăn.\n2. Ướp mực với nước mắm, đường, tiêu, hành tỏi băm.\n3. Phi thơm hành tỏi, cho mực vào xào săn.\n4. Thêm chút nước, kho nhỏ lửa đến khi thấm đều.\n5. Nêm lại, dùng nóng với cơm."
+    },
+    "đậu hũ kho nấm": {
+        "nguyen_lieu": [
+            "3 bìa đậu hũ",
+            "100g nấm rơm",
+            "nước tương",
+            "hành tím",
+            "tiêu",
+            "đường"
+        ],
+        "cach_lam": "1. Đậu hũ chiên vàng. Nấm rửa sạch, để ráo.\n2. Phi thơm hành, cho nấm vào xào sơ.\n3. Cho đậu hũ vào, thêm nước tương, đường, tiêu và chút nước.\n4. Kho nhỏ lửa đến khi thấm vị, nước hơi sệt.\n5. Dùng nóng với cơm."
+    },
+    "thịt kho riềng": {
+        "nguyen_lieu": [
+            "500g thịt ba chỉ",
+            "100g riềng",
+            "nước mắm",
+            "đường",
+            "tiêu",
+            "hành tím"
+        ],
+        "cach_lam": "1. Thịt ba chỉ cắt miếng. Riềng giã nhỏ hoặc thái lát mỏng.\n2. Ướp thịt với nước mắm, đường, tiêu, riềng và hành trong 30 phút.\n3. Xào thịt cho săn, thêm nước rồi kho nhỏ lửa.\n4. Kho đến khi thịt mềm, nước sệt lại.\n5. Dùng nóng với cơm."
+    },
+    "cá thu kho cà": {
+        "nguyen_lieu": [
+            "400g cá thu",
+            "2 quả cà chua",
+            "nước mắm",
+            "đường",
+            "hành tím",
+            "tiêu"
+        ],
+        "cach_lam": "1. Cá cắt khoanh, ướp gia vị.\n2. Cà chua xào chín mềm, cho cá vào.\n3. Thêm nước, kho nhỏ lửa đến khi cá chín và nước sánh lại.\n4. Nêm vừa ăn, thêm tiêu, dùng nóng."
+    },
+    "thịt kho sả ớt": {
+        "nguyen_lieu": [
+            "500g thịt ba chỉ",
+            "2 cây sả",
+            "ớt",
+            "nước mắm",
+            "đường",
+            "tiêu",
+            "hành tím"
+        ],
+        "cach_lam": "1. Thịt cắt miếng, sả băm nhỏ, ớt thái lát.\n2. Ướp thịt với sả, ớt, nước mắm, đường, tiêu.\n3. Phi thơm hành, cho thịt vào xào.\n4. Thêm nước, kho nhỏ lửa đến khi thịt mềm.\n5. Dùng nóng với cơm."
+    },
+    "trứng cút kho thịt": {
+        "nguyen_lieu": [
+            "300g thịt heo",
+            "15 quả trứng cút",
+            "nước mắm",
+            "đường",
+            "tiêu",
+            "hành tím"
+        ],
+        "cach_lam": "1. Trứng cút luộc, bóc vỏ. Thịt cắt miếng.\n2. Ướp thịt với nước mắm, đường, tiêu, hành.\n3. Xào thịt cho săn, cho trứng vào kho cùng.\n4. Kho nhỏ lửa đến khi thấm đều, nước sánh.\n5. Dùng nóng."
+    },
+    "cá cơm kho khô": {
+        "nguyen_lieu": [
+            "200g cá cơm khô",
+            "tỏi",
+            "đường",
+            "nước mắm",
+            "ớt",
+            "tiêu"
+        ],
+        "cach_lam": "1. Cá cơm rửa sạch, để ráo.\n2. Phi tỏi thơm, cho cá vào đảo đều.\n3. Thêm đường, nước mắm, ớt, kho nhỏ lửa đến khi khô ráo.\n4. Thêm tiêu, dùng với cơm trắng."
+    },
+    "sườn non kho tộ": {
+        "nguyen_lieu": [
+            "500g sườn non",
+            "nước mắm",
+            "đường",
+            "tiêu",
+            "hành tím",
+            "nước màu"
+        ],
+        "cach_lam": "1. Sườn rửa sạch, chần nước sôi.\n2. Ướp sườn với nước mắm, đường, tiêu, nước màu.\n3. Phi hành, cho sườn vào xào, rồi kho nhỏ lửa.\n4. Kho đến khi mềm và nước sệt.\n5. Dùng nóng."
+    },
+    "nấm đông cô kho chay": {
+        "nguyen_lieu": [
+            "100g nấm đông cô khô",
+            "nước tương",
+            "đường",
+            "tiêu",
+            "hành boa rô"
+        ],
+        "cach_lam": "1. Nấm ngâm mềm, rửa sạch.\n2. Phi thơm hành boa rô, cho nấm vào xào.\n3. Thêm nước tương, đường, tiêu, kho nhỏ lửa đến khi thấm vị.\n4. Dùng nóng với cơm chay."
+    },
+    "sườn nướng mật ong": {
+        "nguyen_lieu": [
+            "500g sườn heo",
+            "2 muỗng mật ong",
+            "1 muỗng nước mắm",
+            "1 muỗng dầu hào",
+            "1 muỗng tỏi băm",
+            "tiêu"
+        ],
+        "cach_lam": "1. Sườn heo rửa sạch, chặt miếng vừa ăn.\n2. Trộn mật ong, nước mắm, dầu hào, tỏi băm, tiêu thành hỗn hợp gia vị.\n3. Ướp sườn với hỗn hợp gia vị trong 30 phút.\n4. Nướng sườn trên vỉ ở nhiệt độ vừa phải đến khi thịt chín vàng.\n5. Lật đều hai mặt, quét thêm mật ong nếu thích.\n6. Dùng nóng."
+    },
+    "gà nướng mật ong": {
+        "nguyen_lieu": [
+            "1 con gà",
+            "3 muỗng mật ong",
+            "2 muỗng nước mắm",
+            "1 muỗng tỏi băm",
+            "1 muỗng tiêu",
+            "2 muỗng dầu olive"
+        ],
+        "cach_lam": "1. Gà làm sạch, khía vài đường để thấm gia vị.\n2. Trộn mật ong, nước mắm, tỏi băm, tiêu, dầu olive làm gia vị.\n3. Ướp gà với gia vị trong 1 giờ.\n4. Nướng gà trên vỉ ở nhiệt độ vừa phải đến khi chín vàng đều.\n5. Thỉnh thoảng quét thêm gia vị để gà thêm ngon."
+    },
+    "thịt ba chỉ nướng": {
+        "nguyen_lieu": [
+            "500g thịt ba chỉ",
+            "2 muỗng nước mắm",
+            "1 muỗng tỏi băm",
+            "1 muỗng mật ong",
+            "tiêu"
+        ],
+        "cach_lam": "1. Thịt ba chỉ cắt miếng vừa ăn.\n2. Trộn nước mắm, tỏi, mật ong, tiêu để làm gia vị.\n3. Ướp thịt với gia vị trong 30 phút.\n4. Nướng thịt trên vỉ cho đến khi thịt vàng giòn.\n5. Dùng nóng với rau sống và cơm."
+    },
+    "cá nướng muối ớt": {
+        "nguyen_lieu": [
+            "500g cá hồi hoặc cá chép",
+            "2 muỗng muối",
+            "1 muỗng ớt bột",
+            "1 muỗng tỏi băm",
+            "1 muỗng dầu olive"
+        ],
+        "cach_lam": "1. Cá làm sạch, cắt khúc vừa ăn.\n2. Trộn muối, ớt, tỏi băm và dầu olive để làm gia vị.\n3. Ướp cá với gia vị trong 30 phút.\n4. Nướng cá trên vỉ đến khi chín đều, vàng giòn.\n5. Dùng nóng với chanh và cơm trắng."
+    },
+    "mực nướng sa tế": {
+        "nguyen_lieu": [
+            "300g mực",
+            "2 muỗng sa tế",
+            "1 muỗng tỏi băm",
+            "1 muỗng nước mắm",
+            "tiêu"
+        ],
+        "cach_lam": "1. Mực làm sạch, cắt miếng vừa ăn.\n2. Trộn sa tế, tỏi băm, nước mắm, tiêu thành gia vị.\n3. Ướp mực trong 30 phút.\n4. Nướng mực trên vỉ than hồng cho đến khi mực chín và có mùi thơm.\n5. Dùng nóng."
+    },
+    "nem nướng": {
+        "nguyen_lieu": [
+            "300g thịt heo xay",
+            "1 muỗng hành tỏi băm",
+            "1 muỗng nước mắm",
+            "1 muỗng đường",
+            "tiêu",
+            "lá chuối"
+        ],
+        "cach_lam": "1. Thịt heo xay trộn đều với hành tỏi, nước mắm, đường, tiêu.\n2. Viên thịt thành từng viên nhỏ, quấn lá chuối.\n3. Nướng nem trên vỉ đến khi chín vàng.\n4. Dùng nóng với bánh tráng, rau sống và nước mắm pha chua ngọt."
+    },
+    "chân gà nướng": {
+        "nguyen_lieu": [
+            "500g chân gà",
+            "2 muỗng nước mắm",
+            "1 muỗng dầu hào",
+            "1 muỗng mật ong",
+            "1 muỗng tỏi băm",
+            "tiêu"
+        ],
+        "cach_lam": "1. Chân gà làm sạch, chặt khúc.\n2. Trộn nước mắm, dầu hào, mật ong, tỏi băm và tiêu thành gia vị.\n3. Ướp chân gà trong 30 phút.\n4. Nướng chân gà trên vỉ cho đến khi chín vàng.\n5. Dùng nóng với xôi hoặc cơm."
+    },
+    "tôm nướng muối ớt": {
+        "nguyen_lieu": [
+            "300g tôm sú",
+            "2 muỗng muối",
+            "1 muỗng ớt bột",
+            "1 muỗng tỏi băm",
+            "1 muỗng dầu olive"
+        ],
+        "cach_lam": "1. Tôm làm sạch, để nguyên vỏ.\n2. Trộn muối, ớt bột, tỏi băm, dầu olive thành gia vị.\n3. Ướp tôm với gia vị trong 30 phút.\n4. Nướng tôm trên vỉ đến khi tôm chín đỏ, thơm lừng.\n5. Dùng nóng với cơm hoặc bún."
+    },
+    "bánh mì nướng": {
+        "nguyen_lieu": [
+            "2 ổ bánh mì",
+            "2 muỗng bơ",
+            "1 muỗng đường",
+            "1 muỗng sữa đặc"
+        ],
+        "cach_lam": "1. Bánh mì cắt lát mỏng.\n2. Trộn bơ, đường, sữa đặc thành hỗn hợp.\n3. Phết hỗn hợp lên từng lát bánh mì.\n4. Nướng bánh mì trên vỉ đến khi vàng giòn.\n5. Dùng nóng."
+    },
+    "cải thảo nướng": {
+        "nguyen_lieu": [
+            "1 bó cải thảo",
+            "1 muỗng dầu olive",
+            "1 muỗng nước mắm",
+            "tiêu"
+        ],
+        "cach_lam": "1. Cải thảo cắt đôi.\n2. Trộn dầu olive, nước mắm, tiêu để làm gia vị.\n3. Phết gia vị lên cải thảo.\n4. Nướng cải thảo trên vỉ cho đến khi chín và có mùi thơm.\n5. Dùng nóng."
+    },
+    "sò điệp nướng mỡ hành": {
+        "nguyen_lieu": [
+            "300g sò điệp",
+            "1 muỗng mỡ hành",
+            "1 muỗng hành lá",
+            "1 muỗng tỏi băm",
+            "tiêu"
+        ],
+        "cach_lam": "1. Sò điệp làm sạch, để ráo.\n2. Trộn mỡ hành, hành lá, tỏi băm và tiêu.\n3. Phết hỗn hợp lên sò điệp.\n4. Nướng sò điệp trên vỉ đến khi chín, mỡ hành sôi lên.\n5. Dùng nóng."
+    },
+    "chả cá nướng": {
+        "nguyen_lieu": [
+            "300g chả cá",
+            "1 muỗng dầu olive",
+            "1 muỗng tỏi băm",
+            "1 muỗng nước mắm",
+            "tiêu"
+        ],
+        "cach_lam": "1. Chả cá cắt miếng vừa ăn.\n2. Trộn dầu olive, tỏi băm, nước mắm và tiêu thành gia vị.\n3. Ướp chả cá trong 30 phút.\n4. Nướng chả cá trên vỉ cho đến khi vàng đều, thơm.\n5. Dùng nóng với cơm hoặc bún."
+    },
+    "bạch tuộc nướng muối ớt": {
+        "nguyen_lieu": [
+            "300g bạch tuộc",
+            "2 muỗng muối",
+            "1 muỗng ớt bột",
+            "1 muỗng tỏi băm",
+            "tiêu"
+        ],
+        "cach_lam": "1. Bạch tuộc làm sạch, cắt nhỏ.\n2. Trộn muối, ớt bột, tỏi băm và tiêu thành gia vị.\n3. Ướp bạch tuộc với gia vị trong 30 phút.\n4. Nướng bạch tuộc trên vỉ cho đến khi chín vàng.\n5. Dùng nóng."
+    },
+    "cải bó xôi nướng phô mai": {
+        "nguyen_lieu": [
+            "300g cải bó xôi",
+            "100g phô mai",
+            "1 muỗng dầu olive",
+            "1 muỗng tỏi băm",
+            "tiêu"
+        ],
+        "cach_lam": "1. Cải bó xôi rửa sạch, cắt ngắn.\n2. Trộn dầu olive, tỏi băm và phô mai bào.\n3. Phết gia vị lên cải bó xôi.\n4. Nướng cải bó xôi trên vỉ cho đến khi phô mai tan chảy và cải chín.\n5. Dùng nóng."
+    },
+    "tôm hùm nướng bơ tỏi": {
+        "nguyen_lieu": [
+            "1 con tôm hùm",
+            "50g bơ",
+            "2 muỗng tỏi băm",
+            "1 muỗng nước cốt chanh",
+            "tiêu"
+        ],
+        "cach_lam": "1. Tôm hùm làm sạch, cắt đôi.\n2. Trộn bơ, tỏi băm, nước cốt chanh và tiêu.\n3. Phết hỗn hợp lên tôm hùm.\n4. Nướng tôm hùm trên vỉ cho đến khi tôm chín vàng và thơm.\n5. Dùng nóng."
+    },
+    "sườn nướng kiểu Hàn": {
+        "nguyen_lieu": [
+            "500g sườn heo",
+            "3 muỗng tương Hàn Quốc",
+            "2 muỗng mật ong",
+            "1 muỗng tỏi băm",
+            "1 muỗng hành lá"
+        ],
+        "cach_lam": "1. Sườn heo rửa sạch, cắt miếng vừa ăn.\n2. Trộn tương Hàn, mật ong, tỏi băm thành gia vị.\n3. Ướp sườn với gia vị trong 30 phút.\n4. Nướng sườn trên vỉ cho đến khi thịt chín vàng.\n5. Dùng nóng với cơm trắng."
+    },
+    "cá nướng giấy bạc": {
+        "nguyen_lieu": [
+            "1 con cá chẽm",
+            "2 muỗng dầu olive",
+            "1 muỗng nước mắm",
+            "1 muỗng tỏi băm",
+            "tiêu",
+            "2 lát chanh"
+        ],
+        "cach_lam": "1. Cá làm sạch, cắt khía nhẹ.\n2. Trộn dầu olive, nước mắm, tỏi băm và tiêu.\n3. Ướp cá trong 30 phút.\n4. Gói cá trong giấy bạc, nướng trên vỉ cho đến khi cá chín mềm.\n5. Dùng nóng với cơm."
+    },
+    "cà tím nướng mỡ hành": {
+        "nguyen_lieu": [
+            "2 quả cà tím",
+            "2 muỗng mỡ hành",
+            "1 muỗng tỏi băm",
+            "1 muỗng nước mắm",
+            "tiêu"
+        ],
+        "cach_lam": "1. Cà tím cắt lát, rắc một ít muối để thấm nước.\n2. Trộn mỡ hành, tỏi băm, nước mắm và tiêu.\n3. Phết gia vị lên từng lát cà tím.\n4. Nướng cà tím trên vỉ đến khi mềm, vàng.\n5. Dùng nóng."
+    },
+    "thịt nướng kiểu Thái": {
+        "nguyen_lieu": [
+            "500g thịt ba chỉ",
+            "1 muỗng nước mắm",
+            "2 muỗng đường",
+            "1 muỗng tỏi băm",
+            "1 muỗng ớt bột"
+        ],
+        "cach_lam": "1. Thịt ba chỉ cắt miếng nhỏ.\n2. Trộn nước mắm, đường, tỏi, ớt bột để làm gia vị.\n3. Ướp thịt trong 30 phút.\n4. Nướng thịt trên vỉ đến khi vàng giòn.\n5. Dùng nóng với cơm."
+    },
+    "cá nướng sả ớt": {
+        "nguyen_lieu": [
+            "500g cá nục",
+            "2 cây sả",
+            "1 quả ớt",
+            "1 muỗng nước mắm",
+            "tiêu"
+        ],
+        "cach_lam": "1. Cá làm sạch, cắt khúc.\n2. Sả băm nhuyễn, ớt thái nhỏ.\n3. Trộn gia vị gồm sả, ớt, nước mắm và tiêu.\n4. Ướp cá trong 30 phút.\n5. Nướng cá trên vỉ cho đến khi chín vàng.\n6. Dùng nóng."
+    },
+    "bắp cải nướng": {
+        "nguyen_lieu": [
+            "1 cây bắp cải",
+            "2 muỗng dầu olive",
+            "1 muỗng nước mắm",
+            "tiêu"
+        ],
+        "cach_lam": "1. Bắp cải cắt thành từng phần nhỏ.\n2. Trộn dầu olive, nước mắm và tiêu.\n3. Phết gia vị lên bắp cải.\n4. Nướng bắp cải trên vỉ đến khi mềm và có màu vàng.\n5. Dùng nóng."
+    },
+    "ngao nướng mỡ hành": {
+        "nguyen_lieu": [
+            "500g ngao",
+            "2 muỗng mỡ hành",
+            "1 muỗng tỏi băm",
+            "1 muỗng nước mắm",
+            "tiêu"
+        ],
+        "cach_lam": "1. Ngao làm sạch, ngâm nước muối.\n2. Trộn mỡ hành, tỏi băm, nước mắm và tiêu.\n3. Phết gia vị lên từng con ngao.\n4. Nướng ngao trên vỉ đến khi vỏ mở và có mùi thơm.\n5. Dùng nóng."
+    }
+}

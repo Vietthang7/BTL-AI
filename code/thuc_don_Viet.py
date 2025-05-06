@@ -1,23 +1,25 @@
-mon_an_data = {
-    "trứng chiên": {
-        "nguyen_lieu": ["trứng", "dầu ăn", "nước mắm"],
-        "cach_lam": "1. Đập trứng vào bát, thêm chút nước mắm.\n2. Đánh đều trứng.\n3. Cho dầu vào chảo, khi dầu nóng thì đổ trứng vào.\n4. Chiên đến khi vàng đều hai mặt là xong."
-    },
-    "canh chua": {
-        "nguyen_lieu": ["cá", "cà chua", "dứa", "me", "rau thơm"],
-        "cach_lam": "1. Xào cà chua với chút dầu.\n2. Thêm nước, me và cá vào nấu chín.\n3. Thêm dứa và gia vị, đun thêm vài phút.\n4. Rắc rau thơm trước khi tắt bếp."
-    },
-    "rau muống xào tỏi": {
-        "nguyen_lieu": ["rau muống", "tỏi", "dầu ăn", "muối"],
-        "cach_lam": "1. Rửa sạch rau muống, để ráo.\n2. Phi tỏi với dầu.\n3. Cho rau vào xào nhanh tay trên lửa lớn.\n4. Nêm muối và đảo đều cho rau chín tới."
-    }
-}
+import json
+
+# Hàm để đọc dữ liệu từ file JSON
+def doc_du_lieu_json(file_path):
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            return json.load(file)
+    except FileNotFoundError:
+        print("File không tồn tại.")
+        return {}
+    except json.JSONDecodeError:
+        print("Lỗi khi giải mã JSON.")
+        return {}
+
+# Đọc dữ liệu từ file thuc_don.json
+mon_an_data = doc_du_lieu_json('thuc_don.json')
 
 def goi_y_mon_an(danh_sach_nguyen_lieu):
     ket_qua = []
     for ten_mon, thong_tin in mon_an_data.items():
         if all(nl in thong_tin['nguyen_lieu'] for nl in danh_sach_nguyen_lieu):
-            ket_qua.append(f"👉 {ten_mon.title()}")
+            ket_qua.append(f"👉 {ten_mon.title()} \n Cách làm:\n{thong_tin['cach_lam']}")
     if ket_qua:
         return "🍽 Bạn có thể nấu:\n" + "\n".join(ket_qua)
     else:
