@@ -1,0 +1,38 @@
+{
+  "sang": [
+    "Bánh mì ốp la + sữa đặc",
+    "Cháo yến mạch với sữa + trứng luộc",
+    "Bún bò Huế + nước cam",
+    "Xôi gà xé + sữa đậu nành",
+    "Bánh mì pate + trứng chiên + sữa tươi",
+    "Phở bò + nước ép nho",
+    "Hủ tiếu + nước ép dứa"
+  ],
+  "trua": [
+    "Cơm + thịt kho trứng + rau muống xào tỏi + canh bí đỏ",
+    "Cơm + gà xào sả ớt + rau muống luộc + canh chua cá",
+    "Cơm + cá kho tộ + cải thìa xào + canh rau dền thịt bằm",
+    "Cơm + tôm rang + cải thìa xào tỏi + canh cà rốt hầm xương",
+    "Cơm + thịt ba chỉ nướng + canh rau má thịt bằm",
+    "Cơm + thịt kho tiêu + bắp cải luộc + canh bí đỏ",
+    "Cơm + sườn nướng mật ong + rau xào + canh khổ qua nhồi thịt"
+  ],
+  "toi": [
+    "Cơm + cá nướng muối ớt + cải thìa luộc + canh rau ngót",
+    "Cơm + thịt bò xào hành tây + cải bó xôi hấp + canh bí xanh",
+    "Cơm + thịt heo quay + dưa leo + canh bầu nấu tôm",
+    "Mì trứng + bò viên + rau cải",
+    "Cơm + cá nục kho cà + bông cải xào + canh bí",
+    "Cơm + tôm xào rau củ + cải bó xôi luộc + canh chua",
+    "Cơm + cá chép hấp xì dầu + cải ngọt xào tỏi + canh nấm"
+  ],
+  "phu": [
+    "Chuối + sữa chua có đường",
+    "Bánh bao nhân thịt",
+    "Hạt điều + sữa tươi nguyên kem",
+    "Trái cây ngọt (xoài, mít)",
+    "Khoai lang luộc + sữa đặc",
+    "Bánh ngọt + sữa chua có đường",
+    "Bánh flan + sữa đặc"
+  ]
+}

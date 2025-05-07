@@ -1,4 +1,15 @@
 import json
+import requests
+def goi_ollama_de_lay_cong_thuc(ten_mon, model='gemma2'):
+    prompt = f"Hãy viết cách làm chi tiết và nguyên liệu cho món ăn: {ten_mon}."
+    response = requests.post(
+        "http://localhost:11434/api/generate",
+        json={"model": model, "prompt": prompt, "stream": False}
+    )
+    if response.ok:
+        return response.json()["response"].strip()
+    else:
+        return "⚠️ Không thể kết nối với mô hình Ollama. Vui lòng kiểm tra lại."
 
 # Hàm để đọc dữ liệu từ file JSON
 def doc_du_lieu_json(file_path):
@@ -18,16 +29,29 @@ mon_an_data = doc_du_lieu_json('thuc_don.json')
 def goi_y_mon_an(danh_sach_nguyen_lieu):
     ket_qua = []
     for ten_mon, thong_tin in mon_an_data.items():
-        if all(nl in thong_tin['nguyen_lieu'] for nl in danh_sach_nguyen_lieu):
-            ket_qua.append(f"👉 {ten_mon.title()} \n Cách làm:\n{thong_tin['cach_lam']}")
+        # Ghép tất cả nguyên liệu của món ăn thành 1 chuỗi để so sánh dễ hơn
+        nguyen_lieu_mot_mon = " ".join(thong_tin.get('nguyen_lieu', [])).lower()
+
+        # Kiểm tra xem từng nguyên liệu người dùng nhập có xuất hiện trong chuỗi trên không
+        if all(nl.lower() in nguyen_lieu_mot_mon for nl in danh_sach_nguyen_lieu):
+            ket_qua.append(f"👉 {ten_mon.title()} \n ")
+
     if ket_qua:
         return "🍽 Bạn có thể nấu:\n" + "\n".join(ket_qua)
     else:
         return "❌ Không tìm thấy món phù hợp với nguyên liệu bạn đưa ra."
 
+
 def lay_cong_thuc_mon_an(ten_mon):
-    mon = mon_an_data.get(ten_mon.lower())
-    if mon:
-        return f"📌 {ten_mon.title()}\n\n📋 Cách làm:\n{mon['cach_lam']}"
+    ten_mon = ten_mon.strip().lower()  # Chuẩn hóa đầu vào
+    for mon_ten, thong_tin in mon_an_data.items():
+        if mon_ten.strip().lower() == ten_mon:
+            nguyen_lieu = "\n- " + "\n- ".join(thong_tin.get("nguyen_lieu", []))
+        return (
+            f"📌 {ten_mon.title()}\n\n"
+            f"📝 Nguyên liệu:{nguyen_lieu}\n\n"
+            f"📋 Cách làm:\n{mon['cach_lam']}"
+        )
     else:
-        return "❌ Xin lỗi, tôi chưa có cách làm cho món này."
+        # Gọi mô hình Ollama nếu không có trong thư viện
+        return f"🤖 Bạn có thể nấu :\n\n{goi_ollama_de_lay_cong_thuc(ten_mon)}"
