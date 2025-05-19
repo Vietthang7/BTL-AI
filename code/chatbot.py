@@ -8,7 +8,7 @@ from xay_dung_thuc_don import tao_thuc_don_tang_can_trong_ngay, tao_thuc_don_gia
     tao_thuc_don_tang_can_7_ngay, tao_thuc_don_giam_can_7_ngay, xu_ly_mon_khong_thich, khoi_phuc_mon_an_lai, \
     hien_thi_danh_sach_mon_khong_thich
 import json
-
+import os
 # Import các module AI mới
 from ai_modules import MessageClassifier, FoodRecommender
 
@@ -84,26 +84,89 @@ async def tra_loi(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     # Xử lý dựa trên phân loại tin nhắn
     if intent == "goi_y_mon":
-        # Cải tiến chức năng gợi ý món ăn với k-NN
-        if "gợi ý món" in user_message:
-            # Giữ logic cũ nhưng bổ sung kết quả từ k-NN
-            nguyen_lieu = user_message.replace("gợi ý món", "").strip().split(",")
-            nguyen_lieu = [nl.strip() for nl in nguyen_lieu if nl.strip()]
+        # Trích xuất nguyên liệu từ tin nhắn
+        nguyen_lieu_str = user_message.replace("gợi ý món", "").replace("từ", "").replace("với", "").strip()
+        
+        # Tách nguyên liệu bằng nhiều cách
+        nguyen_lieu = []
+        if "," in nguyen_lieu_str:
+            nguyen_lieu = [nl.strip() for nl in nguyen_lieu_str.split(',') if nl.strip()]
+        elif "và" in nguyen_lieu_str:
+            nguyen_lieu = [nl.strip() for nl in nguyen_lieu_str.split('và') if nl.strip()]
+        else:
+            # Nếu không có dấu phân cách, coi như một nguyên liệu
+            nguyen_lieu = [nguyen_lieu_str]
+        
+        if nguyen_lieu:
+            # In ra debug
+            print(f"DEBUG: Nguyên liệu được tìm: {nguyen_lieu}")
             
-            # Logic cũ
-            ai_reply = goi_y_mon_an(nguyen_lieu)
+            # Đọc dữ liệu từ file thuc_don.json
+            try:
+                with open('thuc_don.json', 'r', encoding='utf-8') as f:
+                    thuc_don = json.load(f)
+                    print(f"DEBUG: Đọc thành công thuc_don.json với {len(thuc_don)} món")
+            except FileNotFoundError:
+                try:
+                    with open('code/thuc_don.json', 'r', encoding='utf-8') as f:
+                        thuc_don = json.load(f)
+                        print(f"DEBUG: Đọc thành công code/thuc_don.json với {len(thuc_don)} món")
+                except FileNotFoundError:
+                    await update.message.reply_text("❌ Không tìm thấy file thực đơn.")
+                    return
             
-            # Bổ sung kết quả từ mô hình k-NN
-            if food_recommender.is_trained:
-                knn_suggestions = food_recommender.recommend_from_ingredients(nguyen_lieu, n=3)
-                if knn_suggestions:
-                    ai_reply += "\n\n🤖 Gợi ý thêm từ AI:\n"
-                    for i, food in enumerate(knn_suggestions, 1):
-                        ai_reply += f"{i}. {food.title()}\n"
+            # Tìm món phù hợp - CẢI TIẾN: Tìm linh hoạt hơn
+            mon_an_phu_hop = []
+            
+            for ten_mon, chi_tiet in thuc_don.items():
+                nguyen_lieu_mon = " ".join(str(item).lower() for item in chi_tiet.get('nguyen_lieu', []))
+                
+                # Cải tiến: Thay vì kiểm tra chính xác, kiểm tra một phần
+                matches = 0
+                for nl in nguyen_lieu:
+                    nl_lower = nl.lower()
+                    # Kiểm tra xem nguyên liệu có trong danh sách không
+                    if any(nl_lower in str(ing).lower() for ing in chi_tiet.get('nguyen_lieu', [])):
+                        matches += 1
+                
+                # Nếu tìm thấy tất cả nguyên liệu thì thêm vào kết quả
+                if matches == len(nguyen_lieu):
+                    mon_an_phu_hop.append(f"👉 {ten_mon.title()}")
+            
+            if mon_an_phu_hop:
+                ai_reply = "🍽 Bạn có thể nấu:\n" + "\n".join(mon_an_phu_hop)
+            else:
+                # Nếu không tìm thấy món phù hợp, thử tìm món có ít nhất một nguyên liệu
+                mon_mot_phan = []
+                for ten_mon, chi_tiet in thuc_don.items():
+                    nguyen_lieu_mon = " ".join(str(item).lower() for item in chi_tiet.get('nguyen_lieu', []))
+                    
+                    for nl in nguyen_lieu:
+                        nl_lower = nl.lower()
+                        if any(nl_lower in str(ing).lower() for ing in chi_tiet.get('nguyen_lieu', [])):
+                            mon_mot_phan.append(f"👉 {ten_mon.title()} (có {nl})")
+                            break
+                
+                if mon_mot_phan:
+                    ai_reply = "🍽 Không tìm thấy món với tất cả nguyên liệu, nhưng bạn có thể thử:\n" + "\n".join(mon_mot_phan[:5])
+                else:
+                    # Nếu không tìm thấy món phù hợp
+                    ai_reply = "❌ Không tìm thấy món phù hợp với nguyên liệu bạn đưa ra.\n\n"
+                    ai_reply += "🤖 Gợi ý thêm từ AI:\n"
+                    
+                    # Gợi ý cơ bản
+                    if any("gà" in nl.lower() for nl in nguyen_lieu):
+                        ai_reply += "1. Gà luộc\n2. Gà xào sả ớt\n3. Súp gà\n"
+                    elif any("nấm" in nl.lower() for nl in nguyen_lieu):
+                        ai_reply += "1. Nấm xào tỏi\n2. Canh nấm\n3. Nấm kho tiêu\n"
+                    else:
+                        ai_reply += "1. Món hấp\n2. Món xào\n3. Món luộc\n"
             
             await update.message.reply_text(ai_reply)
-            return
-    
+        else:
+            await update.message.reply_text("Vui lòng cho tôi biết bạn có những nguyên liệu nào? (ví dụ: thịt gà, rau muống)")
+        return
+        # Cải tiến chức năng gợi ý món ăn với k-NN
     elif intent == "cong_thuc":
         if "cách làm món" in user_message:
             ten_mon = user_message.replace("cách làm món", "").strip()
@@ -180,9 +243,18 @@ async def tra_loi(update: Update, context: ContextTypes.DEFAULT_TYPE):
         return
         
     # --- PHẦN MỚI: Chức năng gợi ý món tương tự ---
-    if "món tương tự" in user_message and food_recommender.is_trained:
+    if ("món tương tự" in user_message or "món giống" in user_message or "món như" in user_message) and food_recommender.is_trained:
+        print(f"DEBUG: chay vao day")
         try:
-            ten_mon = user_message.replace("món tương tự", "").strip()
+            # Trích xuất tên món từ tin nhắn
+            ten_mon = user_message.replace("món tương tự", "").replace("món giống", "").replace("món như", "").strip()
+            print(f"DEBUG: Tìm món tương tự với '{ten_mon}'")
+            
+            # Kiểm tra xem tên món có trong danh sách không
+            if not ten_mon:
+                await update.message.reply_text("Vui lòng cho biết tên món bạn muốn tìm món tương tự? Ví dụ: món tương tự cơm gà")
+                return
+                
             similar_foods = food_recommender.recommend_similar(ten_mon, n=5)
             
             if similar_foods:
@@ -191,7 +263,7 @@ async def tra_loi(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     reply += f"{i}. {food.title()}\n"
                 await update.message.reply_text(reply)
             else:
-                await update.message.reply_text(f"❌ Không tìm thấy món tương tự với {ten_mon}.")
+                await update.message.reply_text(f"❌ Không tìm thấy món tương tự với {ten_mon}. Vui lòng kiểm tra lại tên món.")
             return
         except Exception as e:
             await update.message.reply_text(f"❌ Lỗi khi tìm món tương tự: {str(e)}")
@@ -226,6 +298,91 @@ async def huan_luyen(update: Update, context: ContextTypes.DEFAULT_TYPE):
     except Exception as e:
         await update.message.reply_text(f"❌ Lỗi khi huấn luyện mô hình: {str(e)}")
 
+# Lệnh reset models và khởi tạo lại
+async def reset_models(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Lệnh để xóa và huấn luyện lại các mô hình AI từ đầu"""
+    await update.message.reply_text("🔄 Đang xóa và huấn luyện lại các mô hình AI...")
+    
+    try:
+        # Xóa các file model cũ
+        model_files = ["models/message_classifier.pkl", "models/food_recommender.pkl"]
+        for file in model_files:
+            if os.path.exists(file):
+                os.remove(file)
+                print(f"Đã xóa {file}")
+        
+        # Import train_models và chạy huấn luyện
+        from train_models import train_message_classifier, train_food_recommender
+        
+        # Chạy huấn luyện bất đồng bộ
+        await asyncio.to_thread(train_message_classifier)
+        await asyncio.to_thread(train_food_recommender)
+        
+        # Tải lại các mô hình
+        global message_classifier, food_recommender
+        message_classifier = MessageClassifier()
+        message_classifier.load()
+        food_recommender = FoodRecommender()
+        food_recommender.load()
+        
+        await update.message.reply_text("✅ Khởi tạo lại thành công! Các mô hình AI đã được cập nhật.")
+    except Exception as e:
+        await update.message.reply_text(f"❌ Lỗi khi khởi tạo lại mô hình: {str(e)}")
+
+# Thêm hàm debug
+async def debug_thuc_don_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Lệnh để kiểm tra thông tin thực đơn"""
+    # In ra thư mục làm việc hiện tại
+    cwd = os.getcwd()
+    debug_info = f"Thư mục hiện tại: {cwd}\n\n"
+    
+    # Thử mở file thuc_don.json
+    try:
+        with open('thuc_don.json', 'r', encoding='utf-8') as f:
+            thuc_don = json.load(f)
+            debug_info += f"✅ Đọc thành công file thuc_don.json!\n"
+            debug_info += f"Số lượng món: {len(thuc_don)}\n\n"
+            
+            # Kiểm tra một số món cụ thể
+            for mon in ["gà xào nấm", "súp gà nấm", "rau muống xào tỏi"]:
+                if mon in thuc_don:
+                    debug_info += f"- Có món: {mon}\n"
+                    # Hiện một số nguyên liệu
+                    nguyen_lieu = thuc_don[mon].get("nguyen_lieu", [])
+                    if nguyen_lieu:
+                        debug_info += f"  Nguyên liệu: {', '.join(nguyen_lieu[:3])}...\n"
+                else:
+                    debug_info += f"- Không có món: {mon}\n"
+            
+            # Kiểm tra các món có nguyên liệu thịt gà và nấm
+            debug_info += "\nTìm món với thịt gà và nấm:\n"
+            count = 0
+            for ten_mon, chi_tiet in thuc_don.items():
+                nguyen_lieu = " ".join(str(item).lower() for item in chi_tiet.get("nguyen_lieu", [])).lower()
+                if "thịt gà" in nguyen_lieu and ("nấm" in nguyen_lieu or "nấm hương" in nguyen_lieu):
+                    debug_info += f"- {ten_mon}\n"
+                    count += 1
+            
+            if count == 0:
+                debug_info += "Không tìm thấy món nào phù hợp!\n"
+    
+    except FileNotFoundError:
+        debug_info += "\n❌ Không tìm thấy file thuc_don.json trong thư mục hiện tại\n"
+        
+        # Thử tìm trong thư mục code
+        try:
+            with open('code/thuc_don.json', 'r', encoding='utf-8') as f:
+                thuc_don = json.load(f)
+                debug_info += f"\n✅ Đọc thành công file code/thuc_don.json!\n"
+                debug_info += f"Số lượng món: {len(thuc_don)}\n"
+        except FileNotFoundError:
+            debug_info += "\n❌ Không tìm thấy file code/thuc_don.json\n"
+    
+    except json.JSONDecodeError:
+        debug_info += "\n❌ Lỗi cú pháp trong file thuc_don.json\n"
+    
+    await update.message.reply_text(debug_info)
+
 # Token từ BotFather
 TOKEN = '7433569751:AAGPj8iRnKUiHi6Z5f6FNyyOhRyxqk3DbZc'
 #TOKEN = '7964158551:AAEN2Z9m6KNpK7DCQmVZtRPgbmVdGYQUt-I'
@@ -249,7 +406,9 @@ if __name__ == '__main__':
     
     # Thêm handlers
     app.add_handler(CommandHandler("start", bat_dau))
-    app.add_handler(CommandHandler("huanluyen", huan_luyen))  # Thêm lệnh huấn luyện
+    app.add_handler(CommandHandler("huanluyen", huan_luyen))
+    app.add_handler(CommandHandler("resetmodels", reset_models))
+    app.add_handler(CommandHandler("debug", debug_thuc_don_cmd))
     app.add_handler(MessageHandler(filters.TEXT & (~filters.COMMAND), tra_loi))
     
     print("🤖 Bot đang chạy với các mô hình AI...")

@@ -16,6 +16,16 @@ def train_message_classifier():
         ("tôi có thịt gà và nấm", "goi_y_mon"),
         ("gợi ý món từ cá", "goi_y_mon"),
         ("làm gì với thịt bò và khoai tây", "goi_y_mon"),
+        ("món ăn nào phù hợp với thịt gà và nấm", "goi_y_mon"),
+        ("tôi có thịt gà và nấm, nên nấu món gì", "goi_y_mon"),
+        ("chế biến thịt gà với nấm như thế nào", "goi_y_mon"),
+        ("gợi ý món từ cá và rau muống", "goi_y_mon"),
+        ("có cá và rau muống, nấu gì ngon", "goi_y_mon"),
+        ("kết hợp cá với rau muống thành món gì", "goi_y_mon"),
+        ("tôi muốn nấu món từ thịt bò và nấm", "goi_y_mon"),
+        ("món tương tự cơm gà", "goi_y_mon"),
+        ("có món nào giống với phở bò không", "goi_y_mon"),
+        ("món tương tự như cá kho tộ", "goi_y_mon"),
         
         # Loại: cong_thuc
         ("cách làm món thịt kho tàu", "cong_thuc"),
@@ -28,6 +38,12 @@ def train_message_classifier():
         ("hướng dẫn làm gà rang muối", "cong_thuc"),
         ("cách nấu bún bò huế", "cong_thuc"),
         ("làm sao để chiên cá giòn", "cong_thuc"),
+        ("làm món cá kho rau muống thế nào", "cong_thuc"),
+        ("nấu súp gà nấm ra sao", "cong_thuc"),
+        ("cách nấu canh cá với rau muống", "cong_thuc"),
+        ("hướng dẫn làm mì xào hải sản", "cong_thuc"),
+        ("recipe món gà xào nấm", "cong_thuc"),
+        ("hướng dẫn nấu cơm gà nấm", "cong_thuc"),
         
         # Loại: chi_so_suc_khoe
         ("tính chỉ số bmi", "chi_so_suc_khoe"),
