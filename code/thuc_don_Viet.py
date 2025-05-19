@@ -67,9 +67,6 @@ def lay_cong_thuc_mon_an(ten_mon):
     except (FileNotFoundError, json.JSONDecodeError) as e:
         print(f"Lỗi khi đọc file công thức: {e}")
     
-    return (f"🍲 Công thức món {ten_mon.title()}:\n\n"
-            f"📝 Nguyên liệu: {nguyen_lieu}\n\n"
-            f"👨‍🍳 Cách làm: {cach_lam}")
     # Khởi tạo biến nguyen_lieu với giá trị mặc định
     nguyen_lieu = "Không có thông tin"
     cach_lam = "Không có thông tin"

@@ -106,7 +106,7 @@ def tao_thuc_don_giam_can_trong_ngay(mon_khong_thich=None):
     )
 
 async def xu_ly_mon_khong_thich(user_message, context, update,
-                                 mon_an_giam_can, mon_an_tang_can):
+                               mon_an_giam_can, mon_an_tang_can):
     mon_khong_thich = context.user_data.get("mon_khong_thich", [])
     che_do = context.user_data.get("che_do")
     loai_thuc_don = context.user_data.get("loai_thuc_don", "trong_ngay")  # mặc định trong ngày
@@ -115,6 +115,9 @@ async def xu_ly_mon_khong_thich(user_message, context, update,
     phan_mon = user_message.lower().split("không muốn ăn")[-1]
     danh_sach_ten_mon = [m.strip() for m in phan_mon.replace(",", "+").split("+") if m.strip()]
     tim_duoc_mon_nao = False
+    
+    # Danh sách để lưu các món đã thông báo
+    da_thong_bao = set()
 
     # Tập hợp tất cả các món
     tat_ca_mon = (
@@ -126,15 +129,26 @@ async def xu_ly_mon_khong_thich(user_message, context, update,
 
     for ten_mon_khong_thich in danh_sach_ten_mon:
         da_tim_duoc = False
+        
+        # Kiểm tra nếu món này đã có trong danh sách không thích
+        if ten_mon_khong_thich in mon_khong_thich:
+            if ten_mon_khong_thich not in da_thong_bao:
+                await update.message.reply_text(f"Món {ten_mon_khong_thich} đã bị loại trước đó.")
+                da_thong_bao.add(ten_mon_khong_thich)
+            da_tim_duoc = True
+            tim_duoc_mon_nao = True
+            continue
+            
         for mon in tat_ca_mon:
             if ten_mon_khong_thich in mon.lower():
-                if mon not in mon_khong_thich:
+                if ten_mon_khong_thich not in mon_khong_thich and ten_mon_khong_thich not in da_thong_bao:
                     mon_khong_thich.append(ten_mon_khong_thich)
                     await update.message.reply_text(f"Đã ghi nhớ bạn không muốn ăn: {ten_mon_khong_thich}")
-                else:
-                    await update.message.reply_text(f"Món {ten_mon_khong_thich} đã bị loại trước đó.")
+                    da_thong_bao.add(ten_mon_khong_thich)
                 da_tim_duoc = True
                 tim_duoc_mon_nao = True
+                break  # Thoát sau khi tìm thấy món đầu tiên chứa từ khóa
+                
         if not da_tim_duoc:
             await update.message.reply_text(f"Không xác định được món: {ten_mon_khong_thich}")
 
@@ -159,7 +173,6 @@ async def xu_ly_mon_khong_thich(user_message, context, update,
         return
 
     await update.message.reply_text(f"📋 Thực đơn mới không có món bạn không thích:\n{thuc_don}")
-
 async def khoi_phuc_mon_an_lai(user_message, context, send_message_func):
     mon_khong_thich = context.user_data.get("mon_khong_thich", [])
     tim_duoc_mon = False

@@ -18,6 +18,7 @@ food_recommender = FoodRecommender()
 
 # Hàm gọi Ollama model Local (Gemma2)
 def hoi_ollama(prompt):
+    print("DEBUG: After calling Ollama")
     try:
         response = requests.post(
             "http://localhost:11434/api/generate",

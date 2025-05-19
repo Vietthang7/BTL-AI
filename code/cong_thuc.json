@@ -11,7 +11,11 @@
       "2 muỗng canh dầu ăn",
       "Hành lá thái nhỏ để trang trí"
     ],
-    "cach_lam": "1. Rửa sạch thịt gà, để ráo nước và cắt thành từng miếng vừa ăn.\n2. Ướp gà với muối, tỏi băm, ớt băm khoảng 15-30 phút.\n3. Sau khi ướp, phủ một lớp mỏng bột chiên xù lên gà.\n4. Đun nóng dầu trong chảo, cho gà vào chiên vàng đều các mặt.\n5. Khi gà đã chín, thêm gừng băm, lá chanh thái sợi và đảo đều.\n6. Tắt bếp, rắc hành lá lên trên và thưởng thức."
+    "cach_lam": "1. Rửa sạch thịt gà, để ráo nước và cắt thành từng miếng vừa ăn.\n2. Ướp gà với muối, tỏi băm, ớt băm khoảng 15-30 phút.\n3. Sau khi ướp, phủ một lớp mỏng bột chiên xù lên gà.\n4. Đun nóng dầu trong chảo, cho gà vào chiên vàng đều các mặt.\n5. Khi gà đã chín, thêm gừng băm, lá chanh thái sợi và đảo đều.\n6. Tắt bếp, rắc hành lá lên trên và thưởng thức.",
+    "calories": 350,
+    "protein": 28,
+    "carbs": 5,
+    "fat": 24
   },
   "phở bò": {
     "nguyen_lieu": [
@@ -24,50 +28,170 @@
       "Giá đỗ, chanh, ớt tươi",
       "Nước mắm, đường, muối"
     ],
-    "cach_lam": "1. Nướng hành tây và gừng trên lửa cho thơm.\n2. Cho xương bò vào nồi nước, thêm hành tây, gừng và các loại gia vị, nấu trong 3-4 giờ để lấy nước dùng.\n3. Thịt bò thái mỏng (nếu là thăn) hoặc luộc chín rồi thái (nếu là nạm, gầu).\n4. Trụng sơ bánh phở trong nước sôi.\n5. Xếp bánh phở vào tô, thêm thịt bò và chan nước dùng.\n6. Thêm hành lá, ngò gai và ăn kèm với giá đỗ, chanh, ớt."
+    "cach_lam": "1. Nướng hành tây và gừng trên lửa cho thơm.\n2. Cho xương bò vào nồi nước, thêm hành tây, gừng và các loại gia vị, nấu trong 3-4 giờ để lấy nước dùng.\n3. Thịt bò thái mỏng (nếu là thăn) hoặc luộc chín rồi thái (nếu là nạm, gầu).\n4. Trụng sơ bánh phở trong nước sôi.\n5. Xếp bánh phở vào tô, thêm thịt bò và chan nước dùng.\n6. Thêm hành lá, ngò gai và ăn kèm với giá đỗ, chanh, ớt.",
+    "calories": 450,
+    "protein": 25,
+    "carbs": 65,
+    "fat": 8
   },
   "cá kho tộ": {
     "nguyen_lieu": [
-      "500g cá lóc hoặc cá trê",
+      "500g cá lóc (hoặc cá trê, cá quả)",
       "3 muỗng canh nước mắm",
       "2 muỗng canh đường",
-      "1/2 muỗng cà phê tiêu",
-      "2 tép tỏi băm",
-      "1 củ hành khô băm",
-      "2 quả ớt thái khoanh",
-      "Hành lá thái nhỏ",
-      "Dầu ăn"
+      "1 muỗng canh dầu ăn",
+      "2 tép tỏi băm nhỏ",
+      "1 thìa cà phê tiêu đen",
+      "2 quả ớt tươi",
+      "Vài nhánh hành lá",
+      "Nước dừa tươi (tùy thích)"
     ],
-    "cach_lam": "1. Cá làm sạch, cắt khúc vừa ăn.\n2. Phi thơm tỏi và hành khô trong nồi đất.\n3. Cho cá vào xào sơ, thêm nước mắm, đường và tiêu.\n4. Đổ nước vào sâm sấp mặt cá, đun sôi rồi hạ lửa nhỏ.\n5. Kho cá trong khoảng 25-30 phút đến khi nước cạn sệt lại.\n6. Rắc ớt khoanh và hành lá lên trên khi hoàn thành."
+    "cach_lam": "1. Cá làm sạch, để ráo nước, cắt khúc vừa ăn.\n2. Phi thơm tỏi với dầu ăn trong tộ đất.\n3. Cho cá vào, thêm nước mắm, đường, tiêu, ớt.\n4. Thêm nước dừa tươi hoặc nước lọc (xâm xấp mặt cá).\n5. Kho cá trên lửa nhỏ, thỉnh thoảng đảo nhẹ tộ.\n6. Kho đến khi nước cạn, sốt sánh lại và có màu nâu đẹp.\n7. Rắc hành lá thái nhỏ lên trên và dùng nóng với cơm.",
+    "calories": 280,
+    "protein": 32,
+    "carbs": 8,
+    "fat": 15
+  },
+  "bún bò huế": {
+    "nguyen_lieu": [
+      "500g bún tươi",
+      "300g thịt bò (thăn và gân bò)",
+      "200g giò heo (chân giò)",
+      "100g chả Huế (mua sẵn hoặc tự làm)",
+      "3 cây sả đập dập",
+      "1 củ hành tây",
+      "2 muỗng canh sa tế",
+      "2 muỗng canh mắm ruốc Huế",
+      "Rau thơm, giá đỗ, chanh, ớt",
+      "Nước mắm, đường, muối"
+    ],
+    "cach_lam": "1. Thịt bò, giò heo rửa sạch và luộc với hành tây, sả.\n2. Khi thịt chín, vớt ra và thái mỏng, giữ lại nước dùng.\n3. Phi thơm ít sả băm với dầu ăn, cho mắm ruốc và sa tế vào xào.\n4. Cho hỗn hợp mắm ruốc vào nồi nước dùng, nêm nếm lại.\n5. Trụng bún qua nước sôi, cho vào tô.\n6. Xếp thịt bò, giò heo, chả Huế lên trên và chan nước dùng.\n7. Ăn kèm với rau thơm, giá đỗ, chanh, ớt.",
+    "calories": 520,
+    "protein": 30,
+    "carbs": 70,
+    "fat": 12
   },
   "bánh xèo": {
     "nguyen_lieu": [
       "200g bột gạo",
-      "100ml nước cốt dừa",
-      "300ml nước lọc",
-      "1/2 muỗng cà phê nghệ",
-      "150g thịt lợn thái mỏng",
-      "150g tôm tươi",
-      "100g giá đỗ",
-      "Hành lá thái nhỏ",
+      "50g bột nghệ",
+      "400ml nước cốt dừa",
+      "200g thịt heo thái mỏng",
+      "200g tôm tươi",
+      "2 củ hành tím băm nhỏ",
+      "200g giá đỗ",
       "Dầu ăn",
-      "Rau sống các loại để ăn kèm",
-      "Nước mắm pha"
+      "Rau sống các loại, nước mắm pha"
     ],
-    "cach_lam": "1. Trộn bột gạo với nước cốt dừa, nước lọc và nghệ thành hỗn hợp lỏng.\n2. Đun nóng chảo, thêm dầu ăn vào.\n3. Cho thịt lợn và tôm vào chảo xào sơ.\n4. Đổ hỗn hợp bột vào chảo, xoay đều để tạo thành lớp bánh mỏng.\n5. Thêm giá đỗ và hành lá lên trên.\n6. Đậy nắp khoảng 2-3 phút cho bánh chín.\n7. Gấp đôi bánh lại và thưởng thức với rau sống và nước mắm pha."
+    "cach_lam": "1. Trộn bột gạo, bột nghệ với nước cốt dừa và để nghỉ 30 phút.\n2. Đun nóng chảo, thêm dầu ăn và phi thơm hành tím.\n3. Cho thịt heo, tôm vào xào sơ qua.\n4. Múc bột vào chảo, xoay đều để bột tráng mỏng.\n5. Đậy nắp khoảng 2 phút cho bánh chín.\n6. Cho giá đỗ lên một nửa bánh và gập lại.\n7. Ăn kèm với rau sống và nước mắm chua ngọt.",
+    "calories": 480,
+    "protein": 22,
+    "carbs": 55,
+    "fat": 20
+  },
+  "gỏi cuốn": {
+    "nguyen_lieu": [
+      "20 cái bánh tráng",
+      "200g thịt heo (thăn hoặc vai)",
+      "200g tôm tươi",
+      "100g bún tươi",
+      "1 quả dưa chuột",
+      "Rau sống các loại (húng quế, húng cây, rau diếp)",
+      "50g đậu phộng rang",
+      "Nước mắm pha hoặc tương hoisin"
+    ],
+    "cach_lam": "1. Luộc thịt heo, để nguội rồi thái mỏng.\n2. Luộc tôm, bóc vỏ và chẻ đôi theo chiều dọc.\n3. Rửa sạch rau và để ráo.\n4. Chuẩn bị bún tươi, ngâm nước và để ráo.\n5. Nhúng bánh tráng vào nước.\n6. Xếp rau, bún, thịt heo, tôm lên bánh tráng.\n7. Cuốn chặt tay và cắt đôi.\n8. Ăn kèm với nước mắm pha chua ngọt hoặc tương hoisin.",
+    "calories": 220,
+    "protein": 15,
+    "carbs": 25,
+    "fat": 8
+  },
+  "canh chua cá lóc": {
+    "nguyen_lieu": [
+      "300g cá lóc phi lê",
+      "2 quả cà chua",
+      "100g đậu bắp",
+      "100g bạc hà",
+      "2 quả khóm (thơm, dứa)",
+      "Giá đỗ, rau om, ngò gai",
+      "2-3 quả ớt",
+      "Nước mắm, đường, muối",
+      "Dầu ăn, hành tím"
+    ],
+    "cach_lam": "1. Phi thơm hành tím băm với dầu ăn.\n2. Cho cà chua cắt múi cau vào xào sơ.\n3. Thêm nước lọc vào nồi, đun sôi.\n4. Thêm khóm cắt miếng, đậu bắp vào nấu.\n5. Khi các nguyên liệu gần chín, cho cá vào.\n6. Nêm nếm với nước mắm, đường, muối.\n7. Cuối cùng cho bạc hà, giá đỗ, rau om, ngò gai vào.\n8. Tắt bếp và thưởng thức.",
+    "calories": 180,
+    "protein": 22,
+    "carbs": 15,
+    "fat": 5
+  },
+  "gà kho gừng": {
+    "nguyen_lieu": [
+      "500g thịt gà (đùi hoặc ức)",
+      "50g gừng tươi",
+      "3 muỗng canh nước mắm",
+      "2 muỗng canh đường",
+      "2 muỗng canh dầu ăn",
+      "2 tép tỏi băm nhỏ",
+      "Hạt tiêu, ớt (tùy thích)",
+      "Hành lá thái nhỏ"
+    ],
+    "cach_lam": "1. Thịt gà rửa sạch, để ráo nước và cắt miếng vừa ăn.\n2. Gừng thái sợi mỏng, tỏi băm nhỏ.\n3. Ướp gà với nước mắm, đường, hạt tiêu khoảng 15 phút.\n4. Phi thơm tỏi với dầu ăn trong chảo.\n5. Cho gà vào xào với lửa lớn đến khi gà săn lại.\n6. Thêm gừng vào, giảm lửa nhỏ và đậy nắp kho khoảng 15 phút.\n7. Kho đến khi nước sánh lại và gà chín mềm.\n8. Rắc hành lá, ớt lên trên và dùng nóng với cơm.",
+    "calories": 320,
+    "protein": 30,
+    "carbs": 6,
+    "fat": 18
+  },
+  "bún chả": {
+    "nguyen_lieu": [
+      "500g thịt heo (ba chỉ và nạc vai)",
+      "200g bún tươi",
+      "1 củ hành tây",
+      "3 muỗng canh nước mắm",
+      "2 muỗng canh đường",
+      "2 muỗng canh dầu ăn",
+      "Tỏi, gừng băm nhỏ",
+      "Rau sống các loại, chả giò",
+      "Ớt, chanh, giấm"
+    ],
+    "cach_lam": "1. Thịt ba chỉ thái mỏng, thịt nạc vai băm nhỏ.\n2. Ướp thịt với nước mắm, đường, tỏi, gừng băm trong 30 phút.\n3. Nướng thịt trên bếp than hoặc lò nướng đến khi chín vàng đều.\n4. Pha nước chấm với nước mắm, đường, giấm, nước cốt chanh, ớt.\n5. Trụng bún qua nước sôi, để ráo.\n6. Xếp bún vào tô, ăn kèm với thịt nướng, chả giò, rau sống và nước chấm.",
+    "calories": 420,
+    "protein": 25,
+    "carbs": 40,
+    "fat": 18
   },
   "thịt kho tàu": {
     "nguyen_lieu": [
-      "500g thịt ba chỉ",
-      "5 quả trứng vịt luộc",
+      "500g thịt ba rọi",
+      "5 quả trứng vịt",
       "3 muỗng canh nước mắm",
-      "2 muỗng canh đường",
-      "1 hũ nước dừa tươi",
-      "2 tép tỏi băm",
-      "Hành khô băm",
-      "Tiêu, ớt",
-      "Hành lá"
+      "2 muỗng canh đường phèn",
+      "1 muỗng canh nước màu (đường caramel)",
+      "1 củ hành khô",
+      "2 tép tỏi băm nhỏ",
+      "Nước dừa tươi",
+      "Tiêu, ớt"
     ],
-    "cach_lam": "1. Thịt rửa sạch, thái miếng vuông vừa ăn.\n2. Trứng vịt luộc sơ, bóc vỏ.\n3. Phi thơm tỏi và hành khô.\n4. Cho thịt vào xào sơ, thêm nước mắm và đường.\n5. Đổ nước dừa vào ngập thịt và trứng.\n6. Kho trên lửa nhỏ khoảng 1-1.5 giờ, thỉnh thoảng đảo nhẹ.\n7. Khi nước kho cạn sệt lại là được.\n8. Rắc tiêu và hành lá lên trên khi hoàn thành."
+    "cach_lam": "1. Thịt ba rọi rửa sạch, cắt miếng vuông 3-4cm.\n2. Trứng vịt luộc chín, bóc vỏ.\n3. Phi thơm hành khô, tỏi với chút dầu ăn.\n4. Cho thịt vào xào với lửa lớn đến khi săn lại.\n5. Thêm nước màu, nước mắm, đường phèn, trứng vịt vào.\n6. Đổ nước dừa tươi vào xâm xấp mặt thịt.\n7. Kho với lửa nhỏ khoảng 1-1.5 tiếng, thỉnh thoảng đảo nhẹ.\n8. Khi nước sốt sệt lại và thịt mềm là được.",
+    "calories": 550,
+    "protein": 25,
+    "carbs": 10,
+    "fat": 45
+  },
+  "canh khổ qua nhồi thịt": {
+    "nguyen_lieu": [
+      "5 quả khổ qua (mướp đắng)",
+      "300g thịt heo xay",
+      "50g nấm mèo",
+      "2 củ hành khô băm nhỏ",
+      "2 tép tỏi băm nhỏ",
+      "1 muỗng canh nước mắm",
+      "Hạt tiêu, muối",
+      "Hành lá, ngò"
+    ],
+    "cach_lam": "1. Khổ qua cắt khúc, bỏ ruột, chần qua nước nóng.\n2. Nấm mèo ngâm nở, băm nhỏ.\n3. Trộn thịt xay với nấm mèo, hành, tỏi, nước mắm, tiêu, muối.\n4. Nhồi hỗn hợp thịt vào khổ qua.\n5. Đun sôi nước, thả khổ qua nhồi thịt vào.\n6. Nấu với lửa nhỏ đến khi khổ qua chín mềm.\n7. Nêm nếm lại cho vừa ăn.\n8. Rắc hành lá, ngò vào và dùng nóng.",
+    "calories": 220,
+    "protein": 18,
+    "carbs": 12,
+    "fat": 12
   }
 }

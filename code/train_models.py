@@ -13,6 +13,9 @@ def train_message_classifier():
         ("làm gì với tôm và rau muống", "goi_y_mon"),
         ("món ăn nào làm từ nấm", "goi_y_mon"),
         ("dùng đậu phụ làm món gì", "goi_y_mon"),
+        ("tôi có thịt gà và nấm", "goi_y_mon"),
+        ("gợi ý món từ cá", "goi_y_mon"),
+        ("làm gì với thịt bò và khoai tây", "goi_y_mon"),
         
         # Loại: cong_thuc
         ("cách làm món thịt kho tàu", "cong_thuc"),
@@ -22,6 +25,9 @@ def train_message_classifier():
         ("công thức canh chua cá lóc", "cong_thuc"),
         ("hướng dẫn làm bánh xèo", "cong_thuc"),
         ("chỉ cách làm chả giò", "cong_thuc"),
+        ("hướng dẫn làm gà rang muối", "cong_thuc"),
+        ("cách nấu bún bò huế", "cong_thuc"),
+        ("làm sao để chiên cá giòn", "cong_thuc"),
         
         # Loại: chi_so_suc_khoe
         ("tính chỉ số bmi", "chi_so_suc_khoe"),
@@ -46,6 +52,9 @@ def train_message_classifier():
         ("thực đơn tăng cân trong ngày", "thuc_don"),
         ("cho tôi thực đơn ăn kiêng", "thuc_don"),
         ("thực đơn cho người tập gym", "thuc_don"),
+        ("tạo thực đơn giảm cân 7 ngày", "thuc_don"),
+        ("thực đơn tăng cân không ăn hải sản", "thuc_don"),
+        ("thực đơn cho người béo phì", "thuc_don"),
         
         # Loại: thiet_lap
         ("tôi không muốn ăn thịt heo", "thiet_lap"),
@@ -77,41 +86,45 @@ def train_message_classifier():
 def train_food_recommender():
     """Huấn luyện mô hình gợi ý món ăn"""
     # Tạo dữ liệu món ăn và nguyên liệu
-    foods_with_ingredients = {}
-    
-    # Thử đọc từ file cong_thuc.json trước
-    try:
-        with open('cong_thuc.json', 'r', encoding='utf-8') as f:
-            cong_thuc = json.load(f)
-            
-        for food_name, info in cong_thuc.items():
-            if "nguyen_lieu" in info:
-                if isinstance(info["nguyen_lieu"], list):
-                    foods_with_ingredients[food_name] = [ing.lower().split(" ")[0] for ing in info["nguyen_lieu"]]
-                else:
-                    # Nếu nguyên liệu không phải là list
-                    foods_with_ingredients[food_name] = [info["nguyen_lieu"].lower()]
-    except (FileNotFoundError, json.JSONDecodeError):
-        print("Không tìm thấy file cong_thuc.json hoặc file không hợp lệ.")
-    
-    # Đọc thêm dữ liệu từ thuc_don.json nếu có
+    # Đọc dữ liệu từ file thuc_don.json nếu có
     try:
         with open('thuc_don.json', 'r', encoding='utf-8') as f:
             mon_an_data = json.load(f)
-            
-        for food_name, info in mon_an_data.items():
-            foods_with_ingredients[food_name] = [ing.lower() for ing in info.get("nguyen_lieu", [])]
     except (FileNotFoundError, json.JSONDecodeError):
-        # Nếu không có file, tạo dữ liệu mẫu như trước
-        if not foods_with_ingredients:  # Chỉ tạo mẫu nếu chưa có dữ liệu từ cong_thuc.json
-            # Mã tạo dữ liệu mẫu giữ nguyên...
-            pass
+        # Nếu không có file, tạo dữ liệu mẫu
+        mon_an_data = {
+            "cơm gà": {"nguyen_lieu": ["gạo", "thịt gà", "hành lá", "dầu ăn", "muối", "nước mắm"]},
+            "phở bò": {"nguyen_lieu": ["bánh phở", "thịt bò", "hành tây", "hành lá", "giá", "nước dùng", "gia vị"]},
+            "bún chả": {"nguyen_lieu": ["bún", "thịt lợn", "nước mắm", "đường", "ớt", "tỏi", "chanh"]},
+            "bánh xèo": {"nguyen_lieu": ["bột gạo", "nước cốt dừa", "nghệ", "đậu xanh", "thịt lợn", "tôm", "giá đỗ"]},
+            "gỏi cuốn": {"nguyen_lieu": ["bánh tráng", "thịt lợn", "tôm", "bún", "rau sống", "húng quế", "nước mắm"]},
+            "cá kho tộ": {"nguyen_lieu": ["cá", "nước mắm", "đường", "hành", "tỏi", "ớt", "tiêu"]},
+            "thịt kho tàu": {"nguyen_lieu": ["thịt lợn", "trứng", "nước dừa", "nước mắm", "đường", "hành", "tỏi"]},
+            "canh chua cá": {"nguyen_lieu": ["cá", "dứa", "cà chua", "đậu bắp", "bạc hà", "me", "gia vị"]},
+            "gà rang muối": {"nguyen_lieu": ["thịt gà", "muối", "tiêu", "lá chanh", "ớt", "tỏi", "gừng"]},
+            "chả giò": {"nguyen_lieu": ["bánh tráng", "thịt lợn", "nấm mèo", "miến", "trứng", "cà rốt", "hành"]},
+            "bún bò huế": {"nguyen_lieu": ["bún", "thịt bò", "giò heo", "sả", "ớt", "mắm ruốc", "hành lá"]},
+            "bò lúc lắc": {"nguyen_lieu": ["thịt bò", "ớt chuông", "hành tây", "tỏi", "nước mắm", "đường", "dầu hào"]},
+            "cơm tấm sườn": {"nguyen_lieu": ["gạo", "sườn lợn", "nước mắm", "đường", "hành", "tỏi", "ớt"]},
+            "nộm đu đủ": {"nguyen_lieu": ["đu đủ", "tôm khô", "ớt", "đường", "nước mắm", "chanh", "tỏi"]},
+            "cá chiên xù": {"nguyen_lieu": ["cá", "bột chiên xù", "trứng", "hành lá", "nước mắm", "chanh", "ớt"]}
+        }
+        
+        # Lưu dữ liệu mẫu vào file
+        with open('thuc_don.json', 'w', encoding='utf-8') as f:
+            json.dump(mon_an_data, f, ensure_ascii=False, indent=4)
+    
+    # Chuyển đổi định dạng dữ liệu
+    foods_with_ingredients = {}
+    for food_name, info in mon_an_data.items():
+        foods_with_ingredients[food_name] = [ing.lower() for ing in info.get("nguyen_lieu", [])]
     
     # Huấn luyện và lưu mô hình
     recommender = FoodRecommender()
     recommender.train(foods_with_ingredients)
     recommender.save()
     print("Đã huấn luyện và lưu mô hình gợi ý món ăn!")
+
 if __name__ == "__main__":
     # Tạo thư mục models nếu chưa có
     import os
