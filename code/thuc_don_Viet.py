@@ -60,27 +60,34 @@ def lay_cong_thuc_mon_an(ten_mon):
                 if isinstance(thong_tin["nguyen_lieu"], list):
                     nguyen_lieu = "\n- " + "\n- ".join(thong_tin["nguyen_lieu"])
                 else:
-                    nguyen_lieu = thong_tin.get("nguyen_lieu", "Không có thông tin nguyên liệu")
+                    nguyen_lieu = thong_tin["nguyen_lieu"]
                 
-                cach_lam = thong_tin.get("cach_lam", "Không có hướng dẫn cách làm")
+                cach_lam = thong_tin["cach_lam"]
                 break
     except (FileNotFoundError, json.JSONDecodeError) as e:
-        # Thử tìm file trong thư mục code/
-        try:
-            with open('code/cong_thuc.json', 'r', encoding='utf-8') as file:
-                cong_thuc = json.load(file)
-            
-            for mon, thong_tin in cong_thuc.items():
-                if ten_mon in mon.lower():
-                    if isinstance(thong_tin["nguyen_lieu"], list):
-                        nguyen_lieu = "\n- " + "\n- ".join(thong_tin["nguyen_lieu"])
-                    else:
-                        nguyen_lieu = thong_tin.get("nguyen_lieu", "Không có thông tin nguyên liệu")
-                    
-                    cach_lam = thong_tin.get("cach_lam", "Không có hướng dẫn cách làm")
-                    break
-        except (FileNotFoundError, json.JSONDecodeError) as e2:
-            print(f"Lỗi khi đọc file công thức: {e2}")
+        print(f"Lỗi khi đọc file công thức: {e}")
+    
+    # Khởi tạo biến nguyen_lieu với giá trị mặc định
+    nguyen_lieu = "Không có thông tin"
+    cach_lam = "Không có thông tin"
+    
+    # Tìm công thức từ cơ sở dữ liệu
+    ten_mon = ten_mon.lower()
+    
+    try:
+        # Đọc dữ liệu từ file cong_thuc.json
+        with open('cong_thuc.json', 'r', encoding='utf-8') as file:
+            cong_thuc = json.load(file)
+        
+        # Tìm công thức phù hợp
+        for mon, thong_tin in cong_thuc.items():
+            if ten_mon in mon.lower():
+                nguyen_lieu = thong_tin.get("nguyen_lieu", "Không có thông tin nguyên liệu")
+                cach_lam = thong_tin.get("cach_lam", "Không có hướng dẫn cách làm")
+                break
+    except (FileNotFoundError, json.JSONDecodeError):
+        # Nếu không tìm thấy file hoặc file không đúng định dạng
+        pass
     
     # Trả về kết quả, dù có tìm thấy công thức hay không
     return (f"🍲 Công thức món {ten_mon.title()}:\n\n"
