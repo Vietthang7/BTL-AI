@@ -1,29 +1,15 @@
 import json
 import requests
-def goi_ollama_de_lay_cong_thuc(ten_mon, model='gemma2', max_retries=3, delay=2):
-    """Gọi Ollama API để lấy công thức món ăn với cơ chế thử lại."""
+def goi_ollama_de_lay_cong_thuc(ten_mon, model='gemma2'):
     prompt = f"Hãy viết cách làm chi tiết và nguyên liệu cho món ăn: {ten_mon}."
-    
-    for attempt in range(max_retries):
-        try:
-            response = requests.post(
-                "http://localhost:11434/api/generate",
-                json={"model": model, "prompt": prompt, "stream": False},
-                timeout=30
-            )
-            if response.ok:
-                return response.json()["response"].strip()
-            else:
-                print(f"Lỗi kết nối lần {attempt + 1}/{max_retries}: Status code {response.status_code}")
-        except Exception as e:
-            print(f"Lỗi kết nối lần {attempt + 1}/{max_retries}: {str(e)}")
-        
-        if attempt < max_retries - 1:
-            print(f"Thử lại sau {delay} giây...")
-            import time
-            time.sleep(delay)
-    
-    return "⚠️ Không thể kết nối với mô hình Ollama sau nhiều lần thử. Vui lòng kiểm tra lại."
+    response = requests.post(
+        "http://localhost:11434/api/generate",
+        json={"model": model, "prompt": prompt, "stream": False}
+    )
+    if response.ok:
+        return response.json()["response"].strip()
+    else:
+        return "⚠️ Không thể kết nối với mô hình Ollama. Vui lòng kiểm tra lại."
 
 # Hàm để đọc dữ liệu từ file JSON
 def doc_du_lieu_json(file_path):

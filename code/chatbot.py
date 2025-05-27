@@ -17,34 +17,21 @@ message_classifier = MessageClassifier()
 food_recommender = FoodRecommender()
 
 # Hàm gọi Ollama model Local (Gemma2)
-async def hoi_ollama(prompt, model='gemma2', max_retries=3, delay=2):
-    print("DEBUG: Calling Ollama")
-    
-    for attempt in range(max_retries):
-        try:
-            # Sử dụng asyncio.to_thread để không chặn luồng chính
-            def make_request():
-                return requests.post(
-                    "http://localhost:11434/api/generate",
-                    json={"model": model, "prompt": prompt, "stream": False},
-                    timeout=30
-                )
-                
-            response = await asyncio.to_thread(make_request)
-            
-            if response.ok:
-                data = response.json()
-                return data.get("response", "🤖 Không có phản hồi.")
-            else:
-                print(f"Lỗi kết nối Ollama lần {attempt + 1}/{max_retries}: Status code {response.status_code}")
-        except Exception as e:
-            print(f"Lỗi kết nối Ollama lần {attempt + 1}/{max_retries}: {str(e)}")
-        
-        if attempt < max_retries - 1:
-            print(f"Thử lại sau {delay} giây...")
-            await asyncio.sleep(delay)
-    
-    return f"❌ Không thể kết nối với Ollama sau {max_retries} lần thử."
+def hoi_ollama(prompt):
+    print("DEBUG: After calling Ollama")
+    try:
+        response = requests.post(
+            "http://localhost:11434/api/generate",
+            json={
+                "model": "gemma2",
+                "prompt": prompt,
+                "stream": False
+            }
+        )
+        data = response.json()
+        return data.get("response", "🤖 Không có phản hồi.")
+    except Exception as e:
+        return f"❌ Lỗi khi gọi Ollama: {e}"
 
 
 # Lệnh /start
