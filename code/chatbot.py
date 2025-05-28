@@ -74,8 +74,10 @@ mon_an_giam_can = doc_du_lieu_json('thuc_don_giam_can.json')
 # Trả lời mọi tin nhắn mà người dùng gửi
 async def tra_loi(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_message = update.message.text.lower()
+    print(f"DEBUG: Nhận tin nhắn từ người dùng: {user_message}")
     
     # --- PHẦN MỚI: Sử dụng Naive Bayes để phân loại tin nhắn ---
+
     if message_classifier.is_trained:
         intent = message_classifier.predict(user_message)
     else:
@@ -244,7 +246,6 @@ async def tra_loi(update: Update, context: ContextTypes.DEFAULT_TYPE):
         
     # --- PHẦN MỚI: Chức năng gợi ý món tương tự ---
     if ("món tương tự" in user_message or "món giống" in user_message or "món như" in user_message) and food_recommender.is_trained:
-        print(f"DEBUG: chay vao day")
         try:
             # Trích xuất tên món từ tin nhắn
             ten_mon = user_message.replace("món tương tự", "").replace("món giống", "").replace("món như", "").strip()
@@ -255,7 +256,7 @@ async def tra_loi(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await update.message.reply_text("Vui lòng cho biết tên món bạn muốn tìm món tương tự? Ví dụ: món tương tự cơm gà")
                 return
                 
-            similar_foods = food_recommender.recommend_similar(ten_mon, n=5)
+            similar_foods = food_recommender.recommend_similar(ten_mon, n=2)
             
             if similar_foods:
                 reply = f"🍲 Món ăn tương tự với {ten_mon}:\n\n"

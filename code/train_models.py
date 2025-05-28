@@ -23,9 +23,7 @@ def train_message_classifier():
         ("có cá và rau muống, nấu gì ngon", "goi_y_mon"),
         ("kết hợp cá với rau muống thành món gì", "goi_y_mon"),
         ("tôi muốn nấu món từ thịt bò và nấm", "goi_y_mon"),
-        ("món tương tự cơm gà", "goi_y_mon"),
         ("có món nào giống với phở bò không", "goi_y_mon"),
-        ("món tương tự như cá kho tộ", "goi_y_mon"),
         
         # Loại: cong_thuc
         ("cách làm món thịt kho tàu", "cong_thuc"),
